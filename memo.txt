@@ -1,5 +1,4 @@
 docker-compose使い方
-a
 ・起動方法
     ここのフォルダまで開き、コマンドプロンプトで「docker-compose up -d」を行う
     ※起動したら必ず停止してください。(多分バグる)
@@ -13,3 +12,11 @@ a
 dockerDesktopがインストールされている場合はそっちでも操作可能。
 
 ポート番号：10088
+
+【作業手順】
+1.ターミナルでdocker起動する「docker-compose up -d」
+2.ブランチを切り替える（重要）「master → 担当しているブランチ」
+  左下でmaster→ブランチ作成or既存のブランチ
+3.作業終わったらコミット
+4.「docker-compose stop」で終了
+  「docker ps」で確認すること
