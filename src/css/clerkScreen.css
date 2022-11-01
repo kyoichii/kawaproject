@@ -1,5 +1,29 @@
 @charset "UTF-8";
 
-body {
-    background-color: #222;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*コンテナの横幅*/
+    gap: 100px;
+    /*コンテナの高さ*/
+    height: 600px;
+}
+
+.reftItem {
+    display: flex;
+    flex-direction: column;
+    background: #0bd;
+    color: #fff;
+    /*幅*/
+    padding: 100px;
+}
+
+.rightItem {
+    display: flex;
+    flex-direction: column;
+    background: #0bd;
+    color: #fff;
+    /*幅*/
+    padding: 100px;
 }
