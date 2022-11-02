@@ -1,6 +1,8 @@
 
 /*
-    初期変数
+*
+*  初期変数
+*
 */
 var totalcount = 0;         //全会計の個数をカウントする。
 var totalprice = 0;         //全商品の合計を格納する変数
@@ -11,7 +13,9 @@ var vegename = ['玉ねぎ', 'にんじん', '豚肉']
 var price = [150, 120, 220]
 
 /*
-    野菜関数(購入する野菜の関連番号が送られてくる)
+*
+*    野菜関数(購入する野菜の関連番号が送られてくる)
+*
 */
 function vegetable(vegenumber) {
 
@@ -32,14 +36,16 @@ function vegetable(vegenumber) {
         document.getElementById('beaf').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(2)"> ー </button>`;
     }
     //全体の個数・値段を表示
-    totalarea() 
+    totalarea()
     //確認consoleログ
     console.log(vegename[vegenumber] + 'の個数は' + vegecount[vegenumber] + 'です。');
     console.log('全体値段:' + totalprice + "円, 全体個数:" + totalcount)
 }
 
 /*
-    -ボタンクリックイベント
+*
+*   -ボタンクリックイベント
+*
 */
 function minusclick(vegenumber) {
     //商品の個数をカウント・合計個数、値段を計算
@@ -85,6 +91,58 @@ function minusclick(vegenumber) {
 
 }
 //合計表示関数
-function totalarea(){
+function totalarea() {
     document.getElementById('totalarea').innerHTML = `合計${totalcount}個　会計${totalprice}円`;
+}
+
+/*
+*
+*   ダイアログを表示したい！！
+*
+*/
+function showDialog() {
+    var html = document.getElementById("content").innerHTML;
+
+    /*
+    *   ここのエリアでダイアログボックスのHTMLを作成しています。
+    *   id、classの指定はここで直接書くといいかも！
+    *   HTMLも修正したいなら勝手に触ってください。
+    */
+   
+    html = html + '<div id="dialog">'
+        + '<div id="dialog_back" style="height:'
+        + getBrowserHeight() + 'px;"></div>'
+        + '<div id="dialog_body">'
+        + `<div>合計${totalcount}個</div>`
+        + `<div>会計${totalprice}円</div>`
+        + '<p>お間違えなければレジ番号を選択してください</p>'
+        + '<button>一番レジ</button>'
+        + '<button>二番レジ</button><br>'
+        + '<input type="button" onclick="closeDialog()" value="閉じる">'
+        + '</div>'
+        + '</div>';
+
+    console.log(html)
+    document.getElementById("content").innerHTML = html;
+}
+
+// 画面の高さを取得
+function getBrowserHeight() {
+    if (window.innerHeight) {
+        return window.innerHeight;
+    }
+    else if (document.documentElement &&
+        document.documentElement.clientHeight != 0) {
+        return document.documentElement.clientHeight;
+    }
+    else if (document.body) {
+        return document.body.clientHeight;
+    }
+    return 0;
+}
+
+// ダイアログを閉じる
+function closeDialog() {
+    var delNode = document.getElementById("dialog");
+    delNode.parentNode.removeChild(delNode);
 }

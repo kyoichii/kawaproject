@@ -6,12 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style type="text/css">
+        #content {
+            padding: 10px;
+        }
+
+        #dialog_back {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            background-color: #000;
+            opacity: 0.5;
+        }
+
+        /* ダイアログボックスの中のcss */
+        #dialog_body {
+            position: absolute;
+            border-radius: 6px 6px 6px 6px;
+            /* top、leftで頑張って中央に持ってってください。 */
+            top: 14%;
+            left: 15%;
+            background-color: #FFF;
+            box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+            /* CSS3 */
+            /* padding: 250px 450px;     これはダイアログボックスの幅を広げれる */
+        }
+    </style>
 </head>
 
 <body>
     <button onclick="vegetable(0)">テストボタン1</button>
     <button onclick="vegetable(1)">テストボタン2</button>
     <button onclick="vegetable(2)">テストボタン3</button>
+    <button onclick="showDialog()">ダイアログを表示</button>
+    <div id="content">
+    </div>
     <div id="pruductArea">
         <div id="tama">
 
