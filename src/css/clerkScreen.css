@@ -1,29 +1,110 @@
 @charset "UTF-8";
 
-.container {
+/* コンテナ */
+#container {
+    /*フレックスボックス*/
     display: flex;
+    /*ページの中間に固定*/
     justify-content: center;
     align-items: center;
-    /*コンテナの横幅*/
+    /*ボックス間の横幅*/
     gap: 100px;
-    /*コンテナの高さ*/
+    /*ボックスの大きさ*/
     height: 600px;
 }
 
-.reftItem {
+/* 左エリア  */
+#reftArea {
+    /*フレックスボックス*/
     display: flex;
+    /*ボックス内の並びを指定*/
     flex-direction: column;
+    /*背景色*/
     background: #0bd;
     color: #fff;
-    /*幅*/
-    padding: 100px;
+    /*ボックスの大きさ*/
+    height: 500px;
+    width: 700px;
 }
 
-.rightItem {
+/* 商品表示エリア */
+#productArea {
+    /*フレックスボックス*/
     display: flex;
+    /*ボックス内の並びを指定*/
     flex-direction: column;
+    /*ボックス内の配置を指定*/
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: darkgreen;
+}
+
+/* 左下エリア */
+#lowerLeftArea {
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /*ボックス内の下に配置*/
+    margin-top: auto;
+    /*背景色*/
+    background: red;
+    /*ボックスの大きさ*/
+    height: 100px;
+    width: 700px;
+}
+
+/*  合計エリア */
+#totalArea {
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /*ボックス内の配置を指定*/
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: darkgreen;
+}
+
+/* 右エリア */
+#rightArea {
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /*背景色*/
     background: #0bd;
     color: #fff;
-    /*幅*/
-    padding: 100px;
+    /*ボックスのサイズ*/
+    height: 500px;
+    width: 300px;
+}
+
+/* ボタンエリア */
+#buttonArea {
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /*ボックス内の配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: darkgreen;
+}
+
+/* サンプル */
+.box {
+    /*背景色*/
+    background: black;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 40px;
+    /* 余白 */
+    border: 5px solid#ddd;
 }
