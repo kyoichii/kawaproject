@@ -98,17 +98,18 @@ function totalarea() {
 /*
 *
 *   ダイアログを表示したい！！
+*   以下、商品確定ボタンクリックイベント
 *
 */
 function showDialog() {
+    console.log("商品確定ボタンクリック！")
     var html = document.getElementById("content").innerHTML;
-
     /*
     *   ここのエリアでダイアログボックスのHTMLを作成しています。
     *   id、classの指定はここで直接書くといいかも！
     *   HTMLも修正したいなら勝手に触ってください。
     */
-   
+
     html = html + '<div id="dialog">'
         + '<div id="dialog_back" style="height:'
         + getBrowserHeight() + 'px;"></div>'
