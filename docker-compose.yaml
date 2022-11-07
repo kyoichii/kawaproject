@@ -7,3 +7,7 @@ services:
       - 10088:80
     volumes:
       - ./src:/var/www
+  php-fpm:
+    build: ./docker/php-fpm
+    volumes:
+      - ./src/php:/var/www/html
