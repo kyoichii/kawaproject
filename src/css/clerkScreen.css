@@ -15,13 +15,12 @@
 
 /* 左エリア  */
 #reftArea {
+    /*背景色*/
+    background: #BDB4C6;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
-    /*背景色*/
-    background: #0bd;
-    color: #fff;
     /*ボックスの大きさ*/
     height: 500px;
     width: 700px;
@@ -31,12 +30,13 @@
 
 /* 右エリア */
 #rightArea {
+    /*背景色*/
+    /* background: #666; */
+
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
-    /*背景色*/
-    background: #666;
     /* 文字色 */
     color: #fff;
     /*ボックスのサイズ*/
@@ -54,6 +54,14 @@
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* 購入リスト */
+#purchaseList {
+    /* 文字の色 */
+    color: #111;
+    /* 文字の大きさ */
+    font-size: 30px;
 }
 
 /* 左下エリア */
@@ -76,7 +84,8 @@
 /*  合計エリア */
 #totalArea {
     /*背景色*/
-    background: green;
+    /* background: green; */
+
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -88,10 +97,39 @@
     margin-bottom: auto;
 }
 
+/* 金額 */
+#price {
+    /* 文字の色 */
+    color: #111;
+    /*背景色*/
+    background: gold;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 40px;
+    /* 余白 */
+    margin-left: 10px;
+}
+
+/* 数量 */
+#quantity {
+    /* 文字の色 */
+    color: #111;
+    /*背景色*/
+    background: gold;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 40px;
+    /* 余白 */
+    margin-left: 10px;
+}
+
 /* 商品ボタンエリア */
 #productButtonArea {
     /*背景色*/
-    background: #0bd;
+    /* background: #0bd; */
+
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -105,26 +143,31 @@
 
 /* たまねぎボタン */
 #onionButton {
+    /* 背景色 */
+    background: #FFA900;
     /* 文字の色 */
-    color: #111;
-    /*背景色*/
-    background: aqua;
+    color: #fff;
+    /* 文字のサイズ */
+    font-size: 20px;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
     padding: 30px 80px;
     /* 余白 */
     margin-bottom: 50px;
+    margin-top: 50px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
 }
 
 /* にんじんボタン */
 #carrotButton {
+    /* 背景色 */
+    background: #FF7000;
     /* 文字の色 */
-    color: #111;
-    /*背景色*/
-    background: aqua;
+    color: #fff;
+    /* 文字のサイズ */
+    font-size: 20px;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
@@ -137,10 +180,12 @@
 
 /* 豚肉ボタン */
 #porkButton {
+    /* 背景色 */
+    background: #FF0000;
     /* 文字の色 */
-    color: #111;
-    /*背景色*/
-    background: aqua;
+    color: #fff;
+    /* 文字のサイズ */
+    font-size: 20px;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
@@ -154,27 +199,15 @@
 /* 購入確定ボタンボックス */
 #totalButton {
     /* 文字の色 */
-    color: #111;
+    color: #fff;
     /*背景色*/
-    background: green;
+    background: #00186B;
+    /* 文字のサイズ */
+    font-size: 20px;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
     padding: 30px 80px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
-}
-
-/* 合計ボックス */
-.totalBox {
-    /* 文字の色 */
-    color: #111;
-    /*背景色*/
-    background: gold;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    padding: 15px 40px;
-    /* 余白 */
-    margin-left: 10px;
 }

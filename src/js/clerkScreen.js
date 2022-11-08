@@ -1,19 +1,19 @@
-// たまねぎ
+// たまねぎ追加処理
 function onion() {
-    document.getElementById("box").innerText = "たまねぎ";
+    document.getElementById("purchaseList").innerText = "たまねぎ";
 }
 
-// にんじん
+// にんじん追加処理
 function carrot() {
-    document.getElementById("box").innerText = "にんじん";
+    document.getElementById("purchaseList").innerText = "にんじん";
 }
 
-// 豚肉 
+// 豚肉追加処理
 function pork() {
-    document.getElementById("box").innerText = "豚肉";
+    document.getElementById("purchaseList").innerText = "豚肉";
 }
 
-// 購入確定
+// 購入確定処理
 function total() {
-    document.getElementById("box").innerText = "購入確定";
+    document.getElementById("purchaseList").innerText = "購入確定";
 }
