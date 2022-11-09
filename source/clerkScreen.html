@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/clerkScreen.css">
+    <!-- js -->
+    <script src="js/clerkScreen.js"></script>
+    <title>店員画面</title>
+</head>
+
+<body>
+    <div id="content"></div>
+    <!-- コンテナ -->
+    <div id="container">
+        <!-- 左エリア -->
+        <div id="reftArea">
+            <!-- 商品エリア -->
+            <div id="productArea">
+                <!-- 購入リスト -->
+                <!-- <div class="purchaseList">空</div> -->
+                <div id="tama" class="purchaseList">
+
+                </div>
+                <div id="nin" class="purchaseList">
+
+                </div>
+                <div id="beaf" class="purchaseList">
+
+                </div>
+                <div id="totalarea">
+
+                </div>
+            </div>
+            <!-- 左下のエリア -->
+            <div id="lowerLeftArea">
+                <!-- 合計エリア -->
+                <div id="totalarea">
+                    <!-- サンプル用 -->
+                    <div id="quantity">個数：0個</div>
+                    <div id="price">合計：0円</div>
+                </div>
+            </div>
+        </div>
+        <!-- 右エリア -->
+        <div id="rightArea">
+            <!-- ボタンエリア -->
+            <div id="productButtonArea">
+                <input type="button" value="たまねぎ" id="onionButton" onclick="vegetable(0);">
+                <input type="button" value="にんじん" id="carrotButton" onclick="vegetable(1);">
+                <input type="button" value="豚肉(200g)" id="porkButton" onclick="vegetable(2);">
+            </div>
+            <input type="button" value="購入確定" id="totalButton" onclick="showDialog();">
+        </div>
+    </div>
+</body>
+
+</html>

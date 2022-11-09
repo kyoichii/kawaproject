@@ -11,7 +11,7 @@ docker-compose使い方
 
 dockerDesktopがインストールされている場合はそっちでも操作可能。
 
-ポート番号：10088
+ポート番号：90
 
 【作業手順】
 1.ターミナルでdocker起動する「docker-compose up -d」

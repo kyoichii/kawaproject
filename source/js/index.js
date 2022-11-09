@@ -2,9 +2,9 @@
 function buttonClick(number) {
     switch (number) {
         case 1:
-            alert("レジ画面1クリック！");
+            // alert("レジ画面1クリック！");
             //画面遷移方法。
-            // window.location.href = 'パス名'; // 通常の遷移
+            window.location.href = './clerkScreen.html'; // 通常の遷移
             // window.open('パス名', '_blank'); // 新しいタブを開き、ページを表示
             break;
         case 2:
