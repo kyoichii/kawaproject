@@ -16,9 +16,39 @@
     <!-- コンテナ -->
     <div id="container">
         <!-- 左エリア -->
-        <div id="reftArea">左</div>
+        <div id="reftArea">
+            左
+            <!-- 番号表示 -->
+            <div id="numberArea">
+                番号
+            </div>
+            <!-- お金投入エリア -->
+        </div>
         <!-- 右エリア -->
-        <div id="rightArea">右</div>
+        <div id="rightArea">
+            右
+            <!-- お金表示エリア -->
+            <div id="moneyArea">
+                お金表示エリア
+                <!-- お会計 -->
+                <div class="box">
+                    <span class="box-title">お会計</span>
+                    <p>〇〇〇円</p>
+                </div>
+                <!-- 投入金額 -->
+                <div class="box">
+                    <span class="box-title">投入金額</span>
+                    <p>〇〇〇円</p>
+                </div>
+                <!-- お釣り -->
+                <div class="box">
+                    <span class="box-title">お釣り</span>
+                    <p>〇〇〇円</p>
+                </div>
+                <!-- 精算ボタン -->
+                <input type="button" value="購入確定" id="totalButton">
+            </div>
+        </div>
     </div>
 </body>
 

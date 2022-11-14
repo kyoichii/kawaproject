@@ -14,25 +14,115 @@
 /* 左エリア  */
 #reftArea {
     /*背景色*/
-    background: #FF0000;
+    background: darkcyan;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
     /*ボックスの大きさ*/
-    height: 550px;
-    width: 600px;
+    height: 600px;
+    width: 800px;
 }
 
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    background: #00FF00;
+    background: darkcyan;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
     /*ボックスのサイズ*/
     height: 550px;
-    width: 600px;
+    width: 500px;
+}
+
+/* お金表示エリア */
+#moneyArea {
+    /*背景色*/
+    background: #D5F556;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /*ボックス内の配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 項目 */
+.box {
+    /* 横幅 */
+    width: 400px;
+    /* 左上の「アイテム」の位置を固定 */
+    position: relative;
+    /* 高さの間隔 */
+    margin-top: 40px;
+    /* boxの大きさ */
+    padding: 25px 10px 7px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* 項目左上のタイトル */
+.box .box-title {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 項目内の文字 */
+.box p {
+    /*ボックス内の配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 300px;
+    margin-right: auto;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 精算ボタン */
+#totalButton {
+    /*ボックス内の配置を指定*/
+    margin-top: 70px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* 横幅 */
+    width: 200px;
+    /* 文字の色 */
+    color: #fff;
+    /*背景色*/
+    background: #00186B;
+    /* 文字のサイズ */
+    font-size: 20px;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 30px;
+    /* 両端に丸みを付ける */
+    border-radius: 100px;
+}
+
+/* 番号エリア */
+#numberArea {
+    
 }
