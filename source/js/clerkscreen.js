@@ -10,7 +10,7 @@ var vegecount = [0, 0, 0]   //野菜の各個数がカウントされた変数
 var vegeprice = [0, 0, 0]   //野菜の各値段が格納された変数
 //野菜の商品名が格納された配列
 var vegename = ['玉ねぎ', 'にんじん', '豚肉']
-var price = [150, 120, 220]
+var price = [200, 100, 300]
 
 /*
 *
@@ -159,5 +159,5 @@ function closeDialog() {
 function screenchange(rezinumber) {
     console.log("今から画面遷移するよ！")
     //画面遷移のURLを書く
-    location.href = '/test2.html?name=' + rezinumber + '番レジ?totalprice=' + totalprice + '?totalcount=' + totalcount;
+    location.href = '/test2.html?rezinumber=' + rezinumber + '&totalprice=' + totalprice + '&totalcount=' + totalcount;
 }
