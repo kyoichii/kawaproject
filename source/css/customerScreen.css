@@ -9,6 +9,8 @@
     gap: 50px;
     /*ボックスの大きさ*/
     height: 600px;
+    /*コンテナ内の並びを指定*/
+    flex-direction: row;
 }
 
 /* 左エリア  */
@@ -45,7 +47,7 @@
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
-    /*ボックス内の配置を指定*/
+    /*エリアの配置を指定*/
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -90,7 +92,7 @@
 
 /* 項目内の文字 */
 .box p {
-    /*ボックス内の配置を指定*/
+    /*ボックス内にて配置を指定*/
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 300px;
@@ -101,7 +103,7 @@
 
 /* 精算ボタン */
 #totalButton {
-    /*ボックス内の配置を指定*/
+    /*ボタン配置を指定*/
     margin-top: 70px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -124,5 +126,30 @@
 
 /* 番号エリア */
 #numberArea {
-    
+    /*背景色*/
+    background: #D5F556;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /*エリア配置を指定*/
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin-left: 20px;
+    /* margin-right: auto; */
+}
+
+/* 支払いエリア */
+#paymentArea {
+    /*背景色*/
+    background: #D5F556;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
