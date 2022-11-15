@@ -159,5 +159,6 @@ function closeDialog() {
 function screenchange(rezinumber) {
     console.log("今から画面遷移するよ！")
     //画面遷移のURLを書く
-    location.href = '/test2.html?rezinumber=' + rezinumber + '&totalprice=' + totalprice + '&totalcount=' + totalcount;
+    location.replace('/test2.html?rezinumber=' + rezinumber + '&totalprice=' + totalprice + '&totalcount=' + totalcount)
+    // location.href = '/test2.html?rezinumber=' + rezinumber + '&totalprice=' + totalprice + '&totalcount=' + totalcount;
 }

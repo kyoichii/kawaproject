@@ -23,11 +23,15 @@ document.getElementById("totalprice").innerHTML = totalprice + "円";
 //100円、-100円ボタンクリックイベント
 function changebutton(number) {
     if (number > 0) {
-        //100円ボタン
+        //100円ボタン or お金投入ボタン
         console.log("100円ボタンクリック！")
-        inputmonney += 100  //投入金額インクリメント
+        if (number == 100) {
+            inputmonney += 100  //100円インクリメント
+        } else {
+            inputmonney += Number(totalprice)  //合計金額インクリメント
+        }
+        //投入金額が合計金額を超えた場合
         if (inputmonney > totalprice) {
-            //投入金額が合計金額を超えた場合
             changemonney = inputmonney - totalprice //お釣り金額 = 投入金額 - 合計金額
         }
     } else {
@@ -44,4 +48,15 @@ function changebutton(number) {
     //HTML文挿入
     document.getElementById('inputmonney').innerHTML = inputmonney + "円"
     document.getElementById('changemonney').innerHTML = changemonney + "円"
+}
+
+//精算ボタン
+function calculatebutton(){
+    // 投入金額が合計金額以上の場合
+    if(inputmonney >= totalprice){
+        location.replace('/test3.html?changemonney=' + changemonney)
+        // location.href = '/test3.html?changemonney=' + changemonney
+    }else{
+        alert("お金が足りません！！！")
+    }
 }
