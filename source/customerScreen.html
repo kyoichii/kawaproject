@@ -15,17 +15,20 @@
 <body>
     <!-- コンテナ -->
     <div id="container">
+        <div id="number">
+            〇番レジ
+        </div>
         <!-- 左エリア -->
         <div id="reftArea">
-            <div id="number">
-                〇番レジ
-            </div>
-            <!-- 支払ボタン -->
+            <!-- お金投入ボタン -->
             <div id="paymentButton">
                 <input type="button" value="お金を投入する" id="paymentButton" onclick="">
             </div>
-            <!-- お金投入ボタンエリア -->
+            <!-- 手入力エリア -->
             <div id="moneyButtonArea">
+                <div id="input">
+                    手入力
+                </div>
                 <!-- お金ボタン -->
                 <input type="button" value="10円" id="tenYenButton" onclick="">
                 <input type="button" value="100円" id="hundredYenButton" onclick="">
@@ -35,7 +38,6 @@
         </div>
         <!-- 右エリア -->
         <div id="rightArea">
-            右
             <!-- お会計 -->
             <div class="box">
                 <span class="box-title">お会計</span>
@@ -52,7 +54,7 @@
                 <p>〇〇〇円</p>
             </div>
             <!-- 精算ボタン -->
-            <input type="button" value="購入確定" id="totalButton">
+            <input type="button" value="購入確定" id="totalButton" onclick="">
         </div>
 </body>
 

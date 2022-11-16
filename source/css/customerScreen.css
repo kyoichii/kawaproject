@@ -1,5 +1,7 @@
 /* コンテナ */
 #container {
+    /* 左上の「アイテム」の位置を固定 */
+    position: relative;
     /*フレックスボックス*/
     display: flex;
     /*ページの中間に固定*/
@@ -11,6 +13,30 @@
     height: 600px;
     /*コンテナ内の並びを指定*/
     flex-direction: row;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* レジ番号 */
+#container #number {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 左エリア  */
@@ -22,8 +48,8 @@
     /*ボックス内の並びを指定*/
     flex-direction: column;
     /*ボックスの大きさ*/
-    height: 570px;
-    width: 800px;
+    height: 500px;
+    width: 700px;
     /* ボーダー */
     border: solid 2px #333;
     border-radius: 8px;
@@ -32,7 +58,7 @@
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    background: #D5F556;
+    background: #ffffff;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -59,8 +85,10 @@
     /* 左上の「アイテム」の位置を固定 */
     position: relative;
     /* 間隔の調整 */
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
     /* boxの大きさ */
     padding: 25px 10px 7px;
     /* ボーダー */
@@ -103,50 +131,47 @@
 /* 精算ボタン */
 #totalButton {
     /*ボタン配置を指定*/
-    margin-top: auto;
+    margin-top: 50px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     /* 横幅 */
-    width: 200px;
+    width: 300px;
+    height: 100px;
     /* 文字の色 */
     color: #fff;
     /*背景色*/
     background: #00186B;
     /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    padding: 30px;
+    font-size: 40px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
 }
 
 /* お金投入ボタン */
 #paymentButton {
-    /*背景色*/
-    background: #D5F556;
-    /* 文字の大きさ */
-    font-size: 30px;
-    /* 文字の色 */
-    color: #333;
-    /* フォントの設定 */
-    font-weight: bold;
-    /*フレックスボックス*/
-    display: flex;
-    /* ボタンのサイズ */
-    height: 100px;
-    width: 300px;
-    /*エリア配置を指定*/
+    /*ボタン配置を指定*/
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    /* 横幅 */
+    width: 300px;
+    height: 100px;
+    /* 文字の色 */
+    color: #fff;
+    /*背景色*/
+    background: #00186B;
+    /* 文字のサイズ */
+    font-size: 20px;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
 }
 
 /* お金ボタンエリア */
 #moneyButtonArea {
+    /* 左上の「手入力」の位置を固定 */
+    position: relative;
     /*背景色*/
     background: #ffffff;
     /*フレックスボックス*/
@@ -160,12 +185,33 @@
     width: 600px;
     /*エリア配置を指定*/
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
     /* ボーダー */
     border: solid 2px #333;
     border-radius: 8px;
+}
+
+/* レジ番号 */
+#moneyButtonArea #input {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 10円ボタン */
@@ -180,14 +226,15 @@
     color: #333;
     /* フォントの設定 */
     font-weight: bold;
-    /*フレックスボックス*/
-    display: flex;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
     /* ボタンのサイズ */
-    padding: 10px 40px 10px 40px;
+    height: 80px;
+    width: 200px;
     /*エリア配置を指定*/
     margin-top: 50px;
     margin-bottom: 25px;
-    margin-left: 50px;
+    margin-left: 75px;
     margin-right: auto;
 }
 
@@ -201,10 +248,8 @@
     color: #333;
     /* フォントの設定 */
     font-weight: bold;
-    /* 文字を中央に */
-    text-align: center;
-    /*フレックスボックス*/
-    display: flex;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
     /* ボタンのサイズ */
     height: 80px;
     width: 200px;
@@ -212,7 +257,7 @@
     margin-top: 50px;
     margin-bottom: 25px;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 75px;
 }
 
 /* 1000円ボタン */
@@ -225,17 +270,15 @@
     color: #333;
     /* フォントの設定 */
     font-weight: bold;
-    /* 文字を中央に */
-    text-align: center;
-    /*フレックスボックス*/
-    display: flex;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
     /* ボタンのサイズ */
     height: 80px;
     width: 200px;
     /*エリア配置を指定*/
     margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-left: 75px;
     margin-right: auto;
 }
 
@@ -247,18 +290,16 @@
     font-size: 30px;
     /* 文字の色 */
     color: #333;
-    /* 文字を中央に */
-    text-align: center;
     /* フォントの設定 */
     font-weight: bold;
-    /*フレックスボックス*/
-    display: flex;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
     /* ボタンのサイズ */
     height: 80px;
     width: 200px;
     /*エリア配置を指定*/
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 50px;
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 75px;
 }
