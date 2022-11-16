@@ -16,20 +16,23 @@
 /* 左エリア  */
 #reftArea {
     /*背景色*/
-    background: darkcyan;
+    background: #ffffff;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
     /*ボックスの大きさ*/
-    height: 600px;
+    height: 570px;
     width: 800px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
 }
 
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    background: darkcyan;
+    background: #D5F556;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -39,19 +42,14 @@
     width: 500px;
 }
 
-/* お金表示エリア */
-#moneyArea {
-    /*背景色*/
-    background: #D5F556;
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: column;
-    /*エリアの配置を指定*/
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+/* レジ番号*/
+#number {
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 項目 */
@@ -60,8 +58,9 @@
     width: 400px;
     /* 左上の「アイテム」の位置を固定 */
     position: relative;
-    /* 高さの間隔 */
+    /* 間隔の調整 */
     margin-top: 40px;
+    margin-left: 40px;
     /* boxの大きさ */
     padding: 25px 10px 7px;
     /* ボーダー */
@@ -104,8 +103,8 @@
 /* 精算ボタン */
 #totalButton {
     /*ボタン配置を指定*/
-    margin-top: 70px;
-    margin-bottom: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     /* 横幅 */
@@ -124,32 +123,142 @@
     border-radius: 100px;
 }
 
-/* 番号エリア */
-#numberArea {
+/* お金投入ボタン */
+#paymentButton {
     /*背景色*/
     background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
     /*フレックスボックス*/
     display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: row;
-    /*エリア配置を指定*/
-    /* margin-top: auto;
-    margin-bottom: auto; */
-    margin-left: 20px;
-    /* margin-right: auto; */
-}
-
-/* 支払いエリア */
-#paymentArea {
-    /*背景色*/
-    background: #D5F556;
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: column;
+    /* ボタンのサイズ */
+    height: 100px;
+    width: 300px;
     /*エリア配置を指定*/
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* お金ボタンエリア */
+#moneyButtonArea {
+    /*背景色*/
+    background: #ffffff;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /* ボックスが端に達したとき、折り返す */
+    flex-wrap: wrap;
+    /*エリアのサイズ*/
+    height: 275px;
+    width: 600px;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* 10円ボタン */
+#tenYenButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字を中央に */
+    text-align: center;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+    /*フレックスボックス*/
+    display: flex;
+    /* ボタンのサイズ */
+    padding: 10px 40px 10px 40px;
+    /*エリア配置を指定*/
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+/* 100円ボタン */
+#hundredYenButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 文字を中央に */
+    text-align: center;
+    /*フレックスボックス*/
+    display: flex;
+    /* ボタンのサイズ */
+    height: 80px;
+    width: 200px;
+    /*エリア配置を指定*/
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+/* 1000円ボタン */
+#thousandYenButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 文字を中央に */
+    text-align: center;
+    /*フレックスボックス*/
+    display: flex;
+    /* ボタンのサイズ */
+    height: 80px;
+    width: 200px;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+/* クリアボタン */
+#clearButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* 文字を中央に */
+    text-align: center;
+    /* フォントの設定 */
+    font-weight: bold;
+    /*フレックスボックス*/
+    display: flex;
+    /* ボタンのサイズ */
+    height: 80px;
+    width: 200px;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 50px;
 }
