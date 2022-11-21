@@ -11,7 +11,9 @@ function buttonClick(number) {
             alert("レジ画面2クリック！");
             break;
         case 3:
-            alert("レジ会計画面1クリック！");
+            // alert("レジ会計画面1クリック！");
+            //画面遷移方法。
+            window.location.href = './customerScreen.html'; // 通常の遷移
             break;
         case 4:
             alert("レジ会計画面2クリック！");
