@@ -2,6 +2,8 @@
 
 /* コンテナ */
 #container {
+    /* 左上の「アイテム」の位置を固定 */
+    position: relative;
     /*フレックスボックス*/
     display: flex;
     /*ページの中間に固定*/
@@ -11,6 +13,30 @@
     gap: 50px;
     /*ボックスの大きさ*/
     height: 600px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* 「店員画面」表記 */
+#container .name {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 左エリア  */
@@ -26,13 +52,15 @@
     width: 700px;
     /* ボーダー */
     border: 5px solid#111;
+    /*余白を指定して場所を調整*/
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 /* 右エリア */
 #rightArea {
     /*背景色*/
     /* background: #666; */
-
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -42,6 +70,9 @@
     /*ボックスのサイズ*/
     height: 600px;
     width: 400px;
+    /*余白を指定して場所を調整*/
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 /* 商品表示エリア */
@@ -50,7 +81,7 @@
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
-    /*ボックス内の配置を指定*/
+    /*余白を指定して場所を調整*/
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -62,6 +93,8 @@
     color: #111;
     /* 文字の大きさ */
     font-size: 30px;
+    /* フォントの設定 */
+        font-weight: bold;
 }
 
 /* 左下エリア */
@@ -85,12 +118,11 @@
 #totalArea {
     /*背景色*/
     /* background: green; */
-
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: row;
-    /*ボックス内の配置を指定*/
+    /*余白を指定して場所を調整*/
     margin-left: auto;
     margin-right: 30px;
     margin-top: auto;
@@ -109,6 +141,11 @@
     padding: 15px 40px;
     /* 余白 */
     margin-left: 10px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 数量 */
@@ -123,22 +160,52 @@
     padding: 15px 40px;
     /* 余白 */
     margin-left: 10px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 商品ボタンエリア */
 #productButtonArea {
+    /* 左上の「アイテム」の位置を固定 */
+    position: relative;
     /*背景色*/
     /* background: #0bd; */
-
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
-    /*ボックス内の配置を指定*/
+    /*余白を指定して場所を調整*/
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* 「商品ボタンエリア」表記 */
+#productButtonArea .name {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* たまねぎボタン */
@@ -152,12 +219,17 @@
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
-    padding: 30px 80px;
-    /* 余白 */
+    height: 75px;
+    width: 250px;
+    /*余白を指定して場所を調整*/
     margin-bottom: 50px;
     margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
+    /* フォントの設定 */
+        font-weight: bold;
 }
 
 /* にんじんボタン */
@@ -171,11 +243,15 @@
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
-    padding: 30px 80px;
-    /* 余白 */
-    margin-bottom: 50px;
+    height: 75px;
+    width: 250px;
+    /*余白を指定して場所を調整*/
+    margin-right: 50px;
+    margin-left: 50px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
+    /* フォントの設定 */
+        font-weight: bold;
 }
 
 /* 豚肉ボタン */
@@ -189,11 +265,17 @@
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
-    padding: 30px 80px;
-    /* 余白 */
+    height: 75px;
+    width: 250px;
+    /*余白を指定して場所を調整*/
     margin-bottom: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
+    /* フォントの設定 */
+        font-weight: bold;
 }
 
 /* 購入確定ボタンボックス */
@@ -207,7 +289,15 @@
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
-    padding: 30px 80px;
+    height: 100px;
+    width: 300px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
+    /*余白を指定して場所を調整*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* フォントの設定 */
+        font-weight: bold;
 }
