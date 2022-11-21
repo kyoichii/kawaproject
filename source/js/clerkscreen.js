@@ -10,7 +10,7 @@ var vegecount = [0, 0, 0]   //野菜の各個数がカウントされた変数
 var vegeprice = [0, 0, 0]   //野菜の各値段が格納された変数
 //野菜の商品名が格納された配列
 var vegename = ['玉ねぎ', 'にんじん', '豚肉']
-var price = [150, 120, 220]
+var price = [200, 100, 300]
 
 /*
 *
@@ -104,28 +104,34 @@ function totalarea() {
 */
 function showDialog() {
     console.log("商品確定ボタンクリック！")
-    var html = document.getElementById("content").innerHTML;
-    /*
-    *   ここのエリアでダイアログボックスのHTMLを作成しています。
-    *   id、classの指定はここで直接書くといいかも！
-    *   HTMLも修正したいなら勝手に触ってください。
-    */
+    if (totalarea == 0 || totalcount == 0) {
+        //商品カートに何もなかった場合
+        alert("商品が選択されていません。")
+    } else {
+        //商品カートに商品があった場合
+        var html = document.getElementById("content").innerHTML;
+        /*
+        *   ここのエリアでダイアログボックスのHTMLを作成しています。
+        *   id、classの指定はここで直接書くといいかも！
+        *   HTMLも修正したいなら勝手に触ってください。
+        */
 
-    html = html + '<div id="dialog">'
-        + '<div id="dialog_back" style="height:'
-        + getBrowserHeight() + 'px;"></div>'
-        + '<div id="dialog_body">'
-        + `<div>合計${totalcount}個</div>`
-        + `<div>会計${totalprice}円</div>`
-        + '<p>お間違えなければレジ番号を選択してください</p>'
-        + '<button>一番レジ</button>'
-        + '<button>二番レジ</button><br>'
-        + '<input type="button" onclick="closeDialog()" value="閉じる">'
-        + '</div>'
-        + '</div>';
+        html = html + '<div id="dialog">'
+            + '<div id="dialog_back" style="height:'
+            + getBrowserHeight() + 'px;"></div>'
+            + '<div id="dialog_body">'
+            + `<div>合計${totalcount}個</div>`
+            + `<div>会計${totalprice}円</div>`
+            + '<p>お間違えなければレジ番号を選択してください</p>'
+            + '<button onclick="screenchange(1)">一番レジ</button>'
+            + '<button onclick="screenchange(2)">二番レジ</button><br>'
+            + '<input type="button" onclick="closeDialog()" value="閉じる">'
+            + '</div>'
+            + '</div>';
 
-    console.log(html)
-    document.getElementById("content").innerHTML = html;
+        console.log(html)
+        document.getElementById("content").innerHTML = html;
+    }
 }
 
 // 画面の高さを取得
@@ -147,4 +153,12 @@ function getBrowserHeight() {
 function closeDialog() {
     var delNode = document.getElementById("dialog");
     delNode.parentNode.removeChild(delNode);
+}
+
+//画面遷移関数
+function screenchange(rezinumber) {
+    console.log("今から画面遷移するよ！")
+    //画面遷移のURLを書く
+    location.replace('/test2.html?rezinumber=' + rezinumber + '&totalprice=' + totalprice + '&totalcount=' + totalcount)
+    // location.href = '/test2.html?rezinumber=' + rezinumber + '&totalprice=' + totalprice + '&totalcount=' + totalcount;
 }
