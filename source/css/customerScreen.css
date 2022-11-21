@@ -1,0 +1,305 @@
+/* コンテナ */
+#container {
+    /* 左上の「アイテム」の位置を固定 */
+    position: relative;
+    /*フレックスボックス*/
+    display: flex;
+    /*ページの中間に固定*/
+    justify-content: center;
+    align-items: center;
+    /*ボックス間の横幅*/
+    gap: 50px;
+    /*ボックスの大きさ*/
+    height: 600px;
+    /*コンテナ内の並びを指定*/
+    flex-direction: row;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* レジ番号 */
+#container #number {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 左エリア  */
+#reftArea {
+    /*背景色*/
+    background: #ffffff;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /*ボックスの大きさ*/
+    height: 500px;
+    width: 700px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* 右エリア */
+#rightArea {
+    /*背景色*/
+    background: #ffffff;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /*ボックスのサイズ*/
+    height: 550px;
+    width: 500px;
+}
+
+/* レジ番号*/
+#number {
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 項目 */
+.box {
+    /* 横幅 */
+    width: 400px;
+    /* 左上の「アイテム」の位置を固定 */
+    position: relative;
+    /* 間隔の調整 */
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* boxの大きさ */
+    padding: 25px 10px 7px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* 項目左上のタイトル */
+.box .box-title {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 項目内の文字 */
+.box p {
+    /*ボックス内にて配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 300px;
+    margin-right: auto;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 精算ボタン */
+#totalButton {
+    /*ボタン配置を指定*/
+    margin-top: 50px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* 横幅 */
+    width: 300px;
+    height: 100px;
+    /* 文字の色 */
+    color: #fff;
+    /*背景色*/
+    background: #00186B;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* 両端に丸みを付ける */
+    border-radius: 100px;
+}
+
+/* お金投入ボタン */
+#paymentButton {
+    /*ボタン配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* 横幅 */
+    width: 300px;
+    height: 100px;
+    /* 文字の色 */
+    color: #fff;
+    /*背景色*/
+    background: #00186B;
+    /* 文字のサイズ */
+    font-size: 20px;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
+}
+
+/* お金ボタンエリア */
+#moneyButtonArea {
+    /* 左上の「手入力」の位置を固定 */
+    position: relative;
+    /*背景色*/
+    background: #ffffff;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /* ボックスが端に達したとき、折り返す */
+    flex-wrap: wrap;
+    /*エリアのサイズ*/
+    height: 275px;
+    width: 600px;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* レジ番号 */
+#moneyButtonArea #input {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 10円ボタン */
+#tenYenButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字を中央に */
+    text-align: center;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
+    /* ボタンのサイズ */
+    height: 80px;
+    width: 200px;
+    /*エリア配置を指定*/
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 75px;
+    margin-right: auto;
+}
+
+/* 100円ボタン */
+#hundredYenButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
+    /* ボタンのサイズ */
+    height: 80px;
+    width: 200px;
+    /*エリア配置を指定*/
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: 75px;
+}
+
+/* 1000円ボタン */
+#thousandYenButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
+    /* ボタンのサイズ */
+    height: 80px;
+    width: 200px;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: 50px;
+    margin-left: 75px;
+    margin-right: auto;
+}
+
+/* クリアボタン */
+#clearButton {
+    /*背景色*/
+    background: #D5F556;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* 文字の色 */
+    color: #333;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
+    /* ボタンのサイズ */
+    height: 80px;
+    width: 200px;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: 75px;
+}

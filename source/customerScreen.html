@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/customerScreen.css">
+    <!-- js -->
+    <script src="js/customerScreen.js"></script>
+    <title>お客様画面</title>
+</head>
+
+<body>
+    <!-- コンテナ -->
+    <div id="container">
+        <div id="number">
+            〇番レジ
+        </div>
+        <!-- 左エリア -->
+        <div id="reftArea">
+            <!-- お金投入ボタン -->
+            <div id="paymentButton">
+                <input type="button" value="お金を投入する" id="paymentButton" onclick="">
+            </div>
+            <!-- 手入力エリア -->
+            <div id="moneyButtonArea">
+                <div id="input">
+                    手入力
+                </div>
+                <!-- お金ボタン -->
+                <input type="button" value="10円" id="tenYenButton" onclick="">
+                <input type="button" value="100円" id="hundredYenButton" onclick="">
+                <input type="button" value="1000円" id="thousandYenButton" onclick="">
+                <input type="button" value="クリア" id="clearButton" onclick="">
+            </div>
+        </div>
+        <!-- 右エリア -->
+        <div id="rightArea">
+            <!-- お会計 -->
+            <div class="box">
+                <span class="box-title">お会計</span>
+                <p>〇〇〇円</p>
+            </div>
+            <!-- 投入金額 -->
+            <div class="box">
+                <span class="box-title">投入金額</span>
+                <p>〇〇〇円</p>
+            </div>
+            <!-- お釣り -->
+            <div class="box">
+                <span class="box-title">お釣り</span>
+                <p>〇〇〇円</p>
+            </div>
+            <!-- 精算ボタン -->
+            <input type="button" value="購入確定" id="totalButton" onclick="">
+        </div>
+</body>
+
+</html>
