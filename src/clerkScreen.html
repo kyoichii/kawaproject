@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="css/clerkScreen.css">
+    <!-- js -->
+    <script src="js/clerkScreen.js"></script>
+    <title>店員画面</title>
+</head>
+
+<body>
+    <!-- コンテナ -->
+    <div id="container">
+        <div class="name">店員画面</div>
+        <!-- 左エリア -->
+        <div id="reftArea">
+            <!-- 商品エリア -->
+            <div id="productArea">
+                <!-- 購入リスト -->
+                <div id="purchaseList">空</div>
+            </div>
+            <!-- 左下のエリア -->
+            <div id="lowerLeftArea">
+                <!-- 合計エリア -->
+                <div id="totalArea">
+                    <!-- サンプル用 -->
+                    <div id="quantity">個数：〇個</div>
+                    <div id="price">合計：〇円</div>
+                </div>
+            </div>
+        </div>
+        <!-- 右エリア -->
+        <div id="rightArea">
+            <!-- ボタンエリア -->
+            <div id="productButtonArea">
+                <div class="name">商品ボタンエリア</div>
+                <input type="button" value="たまねぎ" id="onionButton" onclick="onion();">
+                <input type="button" value="にんじん" id="carrotButton" onclick="carrot();">
+                <input type="button" value="豚肉(200g)" id="porkButton" onclick="pork();">
+            </div>
+            <input type="button" value="購入確定" id="totalButton" onclick="total();">
+        </div>
+    </div>
+</body>
+
+</html>
