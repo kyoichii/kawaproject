@@ -120,12 +120,18 @@ function showDialog() {
             + '<div id="dialog_back" style="height:'
             + getBrowserHeight() + 'px;"></div>'
             + '<div id="dialog_body">'
-            + `<div>合計${totalcount}個</div>`
-            + `<div>会計${totalprice}円</div>`
+            + '<div class = "mojidiv">'
+            + `<div>合計：${totalcount}個</div>`
+            + `<div>会計：${totalprice}円</div>`
+            + '</div>'
             + '<p>お間違えなければレジ番号を選択してください</p>'
-            + '<button onclick="screenchange(1)">一番レジ</button>'
-            + '<button onclick="screenchange(2)">二番レジ</button><br>'
-            + '<input type="button" onclick="closeDialog()" value="閉じる">'
+            + '<div class="rezibuttondiv">'
+            + '<button onclick="screenchange(1)"class="rezibutton">一番レジ</button>'
+            + '<button onclick="screenchange(2)" class="rezibutton">二番レジ</button>'
+            + '</div>'
+            + '<div class = "closebuttondiv">'
+            + '<input type="button" class="closebutton" onclick="closeDialog()" value="閉じる">'
+            + '</div>'
             + '</div>'
             + '</div>';
 

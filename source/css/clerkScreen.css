@@ -227,13 +227,42 @@
 
 /* ダイアログボックスの中のcss */
 #dialog_body {
+    color: white;
+    font-size: 19px;
     position: absolute;
-    border-radius: 6px 6px 6px 6px;
-    /* top、leftで頑張って中央に持ってってください。 */
-    top: 14%;
-    left: 15%;
-    background-color: #FFF;
-    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
-    /* CSS3 */
-    /* padding: 250px 450px;     これはダイアログボックスの幅を広げれる */
+    /* border-radius: 6px 6px 6px 6px; */
+    top: 27%;
+    left: 33%;
+    /* background-color: #FFF; */
+    /* box-shadow: 6px 6px 6px rgb(0 0 0 / 40%); */
+    padding: 8px;
+}
+
+/* ダイアログdivのcss */
+.mojidiv {
+    /*フレックスボックス*/
+    display: flex;
+    justify-content: space-around;
+    font-size: 33px;
+}
+
+/* レジ選択ボタン */
+.rezibuttondiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.rezibutton {
+    padding: 11px 30px;
+}
+
+/* 閉じるボタン */
+.closebuttondiv {
+    display: flex;
+    justify-content: center;
+}
+
+.closebutton {
+    padding: 5px 15px;
+    margin: 20px;
 }
