@@ -42,7 +42,7 @@
 /* 左エリア  */
 #reftArea {
     /*背景色*/
-    background: #ffffff;
+    /* background: #B08E8C; */
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -50,15 +50,12 @@
     /*ボックスの大きさ*/
     height: 500px;
     width: 700px;
-    /* ボーダー */
-    border: solid 2px #333;
-    border-radius: 8px;
 }
 
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    background: #ffffff;
+    background: #FF91FF;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -66,6 +63,9 @@
     /*ボックスのサイズ*/
     height: 550px;
     width: 500px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
 }
 
 /* レジ番号*/
@@ -80,12 +80,14 @@
 
 /* 項目 */
 .box {
+    /*背景色*/
+    background: #ffffff;
     /* 横幅 */
     width: 400px;
     /* 左上の「アイテム」の位置を固定 */
     position: relative;
     /* 間隔の調整 */
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
@@ -131,8 +133,8 @@
 /* 精算ボタン */
 #totalButton {
     /*ボタン配置を指定*/
-    margin-top: 50px;
-    margin-bottom: auto;
+    margin-top: auto;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
     /* 横幅 */
@@ -154,10 +156,10 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 10px;
     /* 横幅 */
-    width: 300px;
-    height: 100px;
+    height: 60px;
+    width: 200px;
     /* 文字の色 */
     color: #fff;
     /*背景色*/
@@ -173,7 +175,7 @@
     /* 左上の「手入力」の位置を固定 */
     position: relative;
     /*背景色*/
-    background: #ffffff;
+    background: #EDD18C;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -185,7 +187,7 @@
     width: 600px;
     /*エリア配置を指定*/
     margin-top: auto;
-    margin-bottom: 50px;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
     /* ボーダー */
@@ -193,8 +195,8 @@
     border-radius: 8px;
 }
 
-/* レジ番号 */
-#moneyButtonArea #input {
+/* ボタン入力エリアの表記 */
+#moneyButtonArea .name {
     position: absolute;
     display: inline-block;
     /* 位置 */
@@ -302,4 +304,61 @@
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: 75px;
+}
+
+/* お金手入力エリア */
+#moneyInputArea {
+    /* 左上の「手入力」の位置を固定 */
+    position: relative;
+    /*背景色*/
+    background: #EDD18C;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /*エリアのサイズ*/
+    height: 100px;
+    width: 600px;
+    /*エリア配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+}
+
+/* ボタン入力エリアの表記 */
+#moneyInputArea .name {
+    position: absolute;
+    display: inline-block;
+    /* 位置 */
+    top: -2px;
+    left: -2px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    vertical-align: middle;
+    /* 文字の大きさ */
+    font-size: 17px;
+    /* 背景色 */
+    background: #333;
+    /* 文字の色 */
+    color: #ffffff;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+#depositMoney {
+    /*ボタン配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 40px;
+    margin-right: auto;
+    /* 横幅 */
+    height: 60px;
+    width: 290px;
+    /* 文字のサイズ */
+    font-size: 30px;
 }
