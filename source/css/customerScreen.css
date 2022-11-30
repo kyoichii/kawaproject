@@ -1,5 +1,7 @@
 /* コンテナ */
 #container {
+    /*背景色*/
+    background: #ffffff;
     /* 左上の「アイテム」の位置を固定 */
     position: relative;
     /*フレックスボックス*/
@@ -14,7 +16,7 @@
     /*コンテナ内の並びを指定*/
     flex-direction: row;
     /* ボーダー */
-    border: solid 2px #333;
+    border: solid 4px #333;
     border-radius: 8px;
 }
 
@@ -55,7 +57,7 @@
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    background: #FF91FF;
+    background: #70acce;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -143,7 +145,7 @@
     /* 文字の色 */
     color: #fff;
     /*背景色*/
-    background: #00186B;
+    background: #101841;
     /* 文字のサイズ */
     font-size: 40px;
     /* 両端に丸みを付ける */
@@ -163,7 +165,7 @@
     /* 文字の色 */
     color: #fff;
     /*背景色*/
-    background: #00186B;
+    background: #101841;
     /* 文字のサイズ */
     font-size: 20px;
     /* 両端に丸みを付ける */
@@ -175,7 +177,7 @@
     /* 左上の「手入力」の位置を固定 */
     position: relative;
     /*背景色*/
-    background: #EDD18C;
+    background: #70acce;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -219,13 +221,13 @@
 /* 10円ボタン */
 #tenYenButton {
     /*背景色*/
-    background: #D5F556;
+    background: #101841;
+    /* 文字の色 */
+    color: #fff;
     /* 文字の大きさ */
     font-size: 30px;
     /* 文字を中央に */
     text-align: center;
-    /* 文字の色 */
-    color: #333;
     /* フォントの設定 */
     font-weight: bold;
     /* 両端に丸みを付ける */
@@ -243,11 +245,11 @@
 /* 100円ボタン */
 #hundredYenButton {
     /*背景色*/
-    background: #D5F556;
+    background: #101841;
+    /* 文字の色 */
+    color: #fff;
     /* 文字の大きさ */
     font-size: 30px;
-    /* 文字の色 */
-    color: #333;
     /* フォントの設定 */
     font-weight: bold;
     /* 両端に丸みを付ける */
@@ -265,11 +267,11 @@
 /* 1000円ボタン */
 #thousandYenButton {
     /*背景色*/
-    background: #D5F556;
+    background: #101841;
+    /* 文字の色 */
+    color: #fff;
     /* 文字の大きさ */
     font-size: 30px;
-    /* 文字の色 */
-    color: #333;
     /* フォントの設定 */
     font-weight: bold;
     /* 両端に丸みを付ける */
@@ -287,11 +289,11 @@
 /* クリアボタン */
 #clearButton {
     /*背景色*/
-    background: #D5F556;
+    background: #101841;
+    /* 文字の色 */
+    color: #fff;
     /* 文字の大きさ */
     font-size: 30px;
-    /* 文字の色 */
-    color: #333;
     /* フォントの設定 */
     font-weight: bold;
     /* 両端に丸みを付ける */
@@ -350,15 +352,16 @@
     font-weight: bold;
 }
 
+/* 手入力ボックス */
 #depositMoney {
     /*ボタン配置を指定*/
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 40px;
+    margin-left: 80px;
     margin-right: auto;
     /* 横幅 */
-    height: 60px;
-    width: 290px;
+    height: 40px;
+    width: 250px;
     /* 文字のサイズ */
     font-size: 30px;
 }
