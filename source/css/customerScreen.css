@@ -1,7 +1,7 @@
 /* コンテナ */
 #container {
     /*背景色*/
-    background: #ffffff;
+    background: #f7e3af;
     /* 左上の「アイテム」の位置を固定 */
     position: relative;
     /*フレックスボックス*/
@@ -57,7 +57,7 @@
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    background: #70acce;
+    background: #EDD18C;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -134,6 +134,8 @@
 
 /* 精算ボタン */
 #totalButton {
+    /*背景色*/
+    background: #70372c;
     /*ボタン配置を指定*/
     margin-top: auto;
     margin-bottom: 40px;
@@ -144,40 +146,18 @@
     height: 100px;
     /* 文字の色 */
     color: #fff;
-    /*背景色*/
-    background: #101841;
     /* 文字のサイズ */
     font-size: 40px;
     /* 両端に丸みを付ける */
     border-radius: 100px;
 }
 
-/* お金投入ボタン */
-#paymentButton {
-    /*ボタン配置を指定*/
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: 10px;
-    /* 横幅 */
-    height: 60px;
-    width: 200px;
-    /* 文字の色 */
-    color: #fff;
-    /*背景色*/
-    background: #101841;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 両端に丸みを付ける */
-    border-radius: 10px;
-}
-
-/* お金ボタンエリア */
+/* お金ボタン入力エリア */
 #moneyButtonArea {
     /* 左上の「手入力」の位置を固定 */
     position: relative;
     /*背景色*/
-    background: #70acce;
+    background: #EDD18C;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -221,7 +201,7 @@
 /* 10円ボタン */
 #tenYenButton {
     /*背景色*/
-    background: #101841;
+    background: #ec551a;
     /* 文字の色 */
     color: #fff;
     /* 文字の大きさ */
@@ -245,7 +225,7 @@
 /* 100円ボタン */
 #hundredYenButton {
     /*背景色*/
-    background: #101841;
+    background: #ec551a;
     /* 文字の色 */
     color: #fff;
     /* 文字の大きさ */
@@ -267,7 +247,7 @@
 /* 1000円ボタン */
 #thousandYenButton {
     /*背景色*/
-    background: #101841;
+    background: #ec551a;
     /* 文字の色 */
     color: #fff;
     /* 文字の大きさ */
@@ -289,7 +269,7 @@
 /* クリアボタン */
 #clearButton {
     /*背景色*/
-    background: #101841;
+    background: #3f3e41;
     /* 文字の色 */
     color: #fff;
     /* 文字の大きさ */
@@ -364,4 +344,24 @@
     width: 250px;
     /* 文字のサイズ */
     font-size: 30px;
+}
+
+/* お金投入ボタン */
+#paymentButton {
+    /*背景色*/
+    background: #ec551a;
+    /*ボタン配置を指定*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    /* 横幅 */
+    height: 60px;
+    width: 200px;
+    /* 文字の色 */
+    color: #fff;
+    /* 文字のサイズ */
+    font-size: 20px;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
 }
