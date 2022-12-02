@@ -2,8 +2,6 @@
 
 /* コンテナ */
 #container {
-    /* 左上の「アイテム」の位置を固定 */
-    /* position: relative; */
     /*フレックスボックス*/
     display: flex;
     /*ページの中間に固定*/
@@ -14,8 +12,8 @@
     /*ボックスの大きさ*/
     height: 600px;
     /* ボーダー */
-    border: solid 2px #333;
-    border-radius: 8px;
+    border: solid 4px #333;
+    border-radius: 12px;
 }
 
 /* 左エリア  */
