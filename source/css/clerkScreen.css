@@ -21,25 +21,57 @@
 /* 左エリア  */
 #reftArea {
     /*背景色*/
-    background: #BDB4C6;
+    background: #fff;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
     /*ボックスの大きさ*/
-    height: 500px;
-    width: 700px;
+    height: 550px;
+    width: 900px;
     /* ボーダー */
     border: 5px solid#111;
     /*余白を指定して場所を調整*/
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: auto;
+    /* margin-right: auto; */
+}
+
+/* 左下エリア */
+#lowerLeftArea {
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /*ボックス内の下に配置*/
+    margin-top: auto;
+    /*背景色*/
+    background: red;
+    /*ボックスの大きさ*/
+    height: 100px;
+    width: 900px;
+    /* ボーダー */
+    border-top: 5px solid#111;
+}
+
+/*  合計エリア */
+#totalarea {
+    /*背景色*/
+    /* background: green; */
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    /* background: #666; */
+    background: #111;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -48,10 +80,10 @@
     color: #fff;
     /*ボックスのサイズ*/
     height: 600px;
-    width: 400px;
+    width: 300px;
     /*余白を指定して場所を調整*/
-    margin-left: 25px;
-    margin-right: 25px;
+    /* margin-left: auto; */
+    margin-right: auto;
 }
 
 /* 商品表示エリア */
@@ -76,36 +108,23 @@
     font-weight: bold;
 }
 
-/* 左下エリア */
-#lowerLeftArea {
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: row;
-    /*ボックス内の下に配置*/
-    margin-top: auto;
+/* 商品名 */
+#name {
+    /* 文字の色 */
+    color: #111;
     /*背景色*/
-    background: red;
-    /*ボックスの大きさ*/
-    height: 100px;
-    width: 700px;
+    background: gold;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 40px;
+    /* 余白 */
+    margin-left: 10px;
     /* ボーダー */
-    border-top: 5px solid#111;
-}
-
-/*  合計エリア */
-#totalarea {
-    /*背景色*/
-    /* background: green; */
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: row;
-    /*余白を指定して場所を調整*/
-    margin-left: auto;
-    margin-right: 30px;
-    margin-top: auto;
-    margin-bottom: auto;
+    border: solid 2px #333;
+    border-radius: 8px;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 金額 */
@@ -146,6 +165,25 @@
     font-weight: bold;
 }
 
+/* 詳細画面 */
+#change {
+    /* 文字の色 */
+    color: #111;
+    /*背景色*/
+    background: gold;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 40px;
+    /* 余白 */
+    margin-left: 10px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
 /* 商品ボタンエリア */
 #productButtonArea {
     /*背景色*/
@@ -154,14 +192,14 @@
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
+    /*ボックスのサイズ*/
+    /* height: 600px; */
+    width: 300px;
     /*余白を指定して場所を調整*/
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    /* ボーダー */
-    border: solid 2px #333;
-    border-radius: 8px;
 }
 
 /* たまねぎボタン */
@@ -180,8 +218,8 @@
     /*余白を指定して場所を調整*/
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     /* 両端に丸みを付ける */
     border-radius: 100px;
     /* フォントの設定 */
@@ -202,8 +240,8 @@
     height: 75px;
     width: 250px;
     /*余白を指定して場所を調整*/
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     /* 両端に丸みを付ける */
     border-radius: 100px;
     /* フォントの設定 */
@@ -226,8 +264,8 @@
     /*余白を指定して場所を調整*/
     margin-bottom: 50px;
     margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-left: auto;
+    margin-right: auto;
     /* 両端に丸みを付ける */
     border-radius: 100px;
     /* フォントの設定 */
