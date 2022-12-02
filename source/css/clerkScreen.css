@@ -2,6 +2,8 @@
 
 /* コンテナ */
 #container {
+    /*背景色*/
+    background: #f7e3af;
     /*フレックスボックス*/
     display: flex;
     /*ページの中間に固定*/
@@ -146,10 +148,8 @@
 
 /* 商品ボタンエリア */
 #productButtonArea {
-    /* 左上の「アイテム」の位置を固定 */
-    /* position: relative; */
     /*背景色*/
-    /* background: #0bd; */
+    background: #f3c655;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -234,14 +234,14 @@
     font-weight: bold;
 }
 
-/* 購入確定ボタンボックス */
+/* 商品確定ボタン */
 #totalButton {
+    /*背景色*/
+    background: #70372c;
     /* 文字の色 */
     color: #fff;
-    /*背景色*/
-    background: #00186B;
     /* 文字のサイズ */
-    font-size: 20px;
+    font-size: 40px;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
