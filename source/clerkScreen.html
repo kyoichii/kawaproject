@@ -20,27 +20,32 @@
         <div id="reftArea">
             <!-- 商品エリア -->
             <div id="productArea">
-                <!-- 購入リスト -->
-                <!-- <div class="purchaseList">空</div> -->
-                <div id="tama" class="purchaseList">
-
-                </div>
-                <div id="nin" class="purchaseList">
-
-                </div>
-                <div id="beaf" class="purchaseList">
-
-                </div>
-                <div id="totalarea">
-
-                </div>
+                <!-- 商品ボタン -->
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
             </div>
             <!-- 左下のエリア -->
             <div id="lowerLeftArea">
                 <!-- 合計エリア -->
                 <div id="totalarea">
-                    <!-- サンプル用 -->
-                    <div id="name">商品名</div>
+                    <!-- 商品表示 -->
+                    <div id="name">
+                        <!-- 後に変更 -->
+                        <div id="tama" class="purchaseList">
+                            
+                        </div>
+                    </div>
+                    <!-- その他項目 -->
                     <div id="quantity">個数：0個</div>
                     <div id="price">合計：0円</div>
                     <div id="change">詳細画面</div>
@@ -50,12 +55,12 @@
         <!-- 右エリア -->
         <div id="rightArea">
             <!-- ボタンエリア -->
-            <div id="productButtonArea">
-                <input type="button" value="野菜" id="onionButton" onclick="vegetable(0);">
-                <input type="button" value="水産" id="carrotButton" onclick="vegetable(1);">
-                <input type="button" value="惣菜" id="porkButton" onclick="vegetable(2);">
+            <div id="changeButtonArea">
+                <button type="button" value="野菜" id="onionButton" onclick="vegetable(0);">野菜</button>
+                <button type="button" value="水産" id="carrotButton" onclick="vegetable(1);">水産</button>
+                <button type="button" value="惣菜" id="porkButton" onclick="vegetable(2);">惣菜</button>
             </div>
-            <input type="button" value="確定" id="totalButton" onclick="showDialog();">
+            <button type="button" value="確定" id="totalButton" onclick="showDialog();">確定</button>
         </div>
     </div>
 </body>

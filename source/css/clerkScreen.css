@@ -71,7 +71,7 @@
 /* 右エリア */
 #rightArea {
     /*背景色*/
-    background: #111;
+    /* background: #111; */
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -86,16 +86,43 @@
     margin-right: auto;
 }
 
-/* 商品表示エリア */
+/* 商品ボタン表示エリア */
 #productArea {
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
-    flex-direction: column;
+    flex-direction: row;
+    /* ボックスが端に達したとき、折り返す */
+    flex-wrap: wrap;
     /*余白を指定して場所を調整*/
-    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    /* margin-bottom: 10px; */
+    margin-top: 10px;
+}
+
+/* 商品ボタン */
+.productButton {
+    /* 文字の色 */
+    color: #111;
+    /*背景色*/
+    background: gold;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスの余白*/
+    padding: 30px 110px;
+    /* 余白 */
+    margin-left: 10px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+    /* フォントの設定 */
+    font-weight: bold;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 /* 購入リスト */
@@ -103,7 +130,7 @@
     /* 文字の色 */
     color: #111;
     /* 文字の大きさ */
-    font-size: 30px;
+    font-size: 15px;
     /* フォントの設定 */
     font-weight: bold;
 }
@@ -117,9 +144,10 @@
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
-    padding: 15px 40px;
-    /* 余白 */
-    margin-left: 10px;
+    padding: 15px 60px;
+    /*ボックスの大きさ*/
+    height: 30px;
+    width: 250px;
     /* ボーダー */
     border: solid 2px #333;
     border-radius: 8px;
@@ -184,8 +212,8 @@
     font-weight: bold;
 }
 
-/* 商品ボタンエリア */
-#productButtonArea {
+/* 切り替えボタンエリア */
+#changeButtonArea {
     /*背景色*/
     background: #f3c655;
     /*フレックスボックス*/
@@ -200,6 +228,9 @@
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+    /* ボーダー */
+    border: solid 4px #333;
+    border-radius: 3px;
 }
 
 /* たまねぎボタン */
