@@ -213,7 +213,7 @@
 }
 
 /* 切り替えボタンエリア */
-#changeButtonArea {
+.changeButtonArea {
     /*背景色*/
     background: #f3c655;
     /*フレックスボックス*/
@@ -233,8 +233,8 @@
     border-radius: 3px;
 }
 
-/* たまねぎボタン */
-#onionButton {
+/* 切り替えボタン */
+.changeButton {
     /* 背景色 */
     background: #FFA900;
     /* 文字の色 */
@@ -247,54 +247,8 @@
     height: 75px;
     width: 250px;
     /*余白を指定して場所を調整*/
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
-    /* フォントの設定 */
-    font-weight: bold;
-}
-
-/* にんじんボタン */
-#carrotButton {
-    /* 背景色 */
-    background: #FF7000;
-    /* 文字の色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 75px;
-    width: 250px;
-    /*余白を指定して場所を調整*/
-    margin-left: auto;
-    margin-right: auto;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
-    /* フォントの設定 */
-    font-weight: bold;
-}
-
-/* 豚肉ボタン */
-#porkButton {
-    /* 背景色 */
-    background: #FF0000;
-    /* 文字の色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 75px;
-    width: 250px;
-    /*余白を指定して場所を調整*/
-    margin-bottom: 50px;
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     /* 両端に丸みを付ける */

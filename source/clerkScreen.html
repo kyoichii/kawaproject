@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css -->
     <link rel="stylesheet" href="css/clerkScreen.css">
-    <!-- js -->
-    <script src="js/clerkScreen.js"></script>
     <title>店員画面</title>
 </head>
 
@@ -22,17 +20,6 @@
             <div id="productArea">
                 <!-- 商品ボタン -->
                 <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
-                <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
             </div>
             <!-- 左下のエリア -->
             <div id="lowerLeftArea">
@@ -42,7 +29,7 @@
                     <div id="name">
                         <!-- 後に変更 -->
                         <div id="tama" class="purchaseList">
-                            
+
                         </div>
                     </div>
                     <!-- その他項目 -->
@@ -55,14 +42,16 @@
         <!-- 右エリア -->
         <div id="rightArea">
             <!-- ボタンエリア -->
-            <div id="changeButtonArea">
-                <button type="button" value="野菜" id="onionButton" onclick="vegetable(0);">野菜</button>
-                <button type="button" value="水産" id="carrotButton" onclick="vegetable(1);">水産</button>
-                <button type="button" value="惣菜" id="porkButton" onclick="vegetable(2);">惣菜</button>
+            <div class="changeButtonArea">
+                <button type="button" value="野菜" class="changeButton">野菜</button>
+                <button type="button" value="水産" class="changeButton">水産</button>
+                <button type="button" value="惣菜" class="changeButton">惣菜</button>
             </div>
             <button type="button" value="確定" id="totalButton" onclick="showDialog();">確定</button>
         </div>
     </div>
+    <!-- js -->
+    <script src="js/clerkscreen.js"></script>
 </body>
 
 </html>
