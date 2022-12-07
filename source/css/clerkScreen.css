@@ -1,23 +1,5 @@
 @charset "UTF-8";
 
-/* コンテナ */
-#container {
-    /*背景色*/
-    background: #f7e3af;
-    /*フレックスボックス*/
-    display: flex;
-    /*ページの中間に固定*/
-    justify-content: center;
-    align-items: center;
-    /*ボックス間の横幅*/
-    gap: 50px;
-    /*ボックスの大きさ*/
-    height: 600px;
-    /* ボーダー */
-    border: solid 4px #333;
-    border-radius: 12px;
-}
-
 /* 左エリア  */
 #reftArea {
     /*背景色*/
@@ -27,13 +9,13 @@
     /*ボックス内の並びを指定*/
     flex-direction: column;
     /*ボックスの大きさ*/
-    height: 550px;
-    width: 900px;
-    /* ボーダー */
-    border: 5px solid#111;
+    height: 600px;
+    width: 1100px;
     /*余白を指定して場所を調整*/
     margin-left: auto;
-    /* margin-right: auto; */
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* 左下エリア */
@@ -48,9 +30,9 @@
     background: red;
     /*ボックスの大きさ*/
     height: 100px;
-    width: 900px;
+    width: 1095px;
     /* ボーダー */
-    border-top: 5px solid#111;
+    border: 5px solid#111;
 }
 
 /*  合計エリア */
@@ -66,39 +48,6 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-}
-
-/* 右エリア */
-#rightArea {
-    /*背景色*/
-    /* background: #111; */
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: column;
-    /* 文字色 */
-    color: #fff;
-    /*ボックスのサイズ*/
-    height: 600px;
-    width: 300px;
-    /*余白を指定して場所を調整*/
-    /* margin-left: auto; */
-    margin-right: auto;
-}
-
-/* 商品ボタン表示エリア */
-#productArea {
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: row;
-    /* ボックスが端に達したとき、折り返す */
-    flex-wrap: wrap;
-    /*余白を指定して場所を調整*/
-    margin-left: auto;
-    margin-right: auto;
-    /* margin-bottom: 10px; */
-    margin-top: 10px;
 }
 
 /* 商品ボタン */
@@ -212,75 +161,6 @@
     font-weight: bold;
 }
 
-/* 切り替えボタンエリア */
-.changeButtonArea {
-    /*背景色*/
-    background: #f3c655;
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: column;
-    /*ボックスのサイズ*/
-    /* height: 600px; */
-    width: 300px;
-    /*余白を指定して場所を調整*/
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    /* ボーダー */
-    border: solid 4px #333;
-    border-radius: 3px;
-}
-
-/* 切り替えボタン */
-.changeButton {
-    /* 背景色 */
-    background: #FFA900;
-    /* 文字の色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 75px;
-    width: 250px;
-    /*余白を指定して場所を調整*/
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
-    /* フォントの設定 */
-    font-weight: bold;
-}
-
-/* 商品確定ボタン */
-#totalButton {
-    /*背景色*/
-    background: #70372c;
-    /* 文字の色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 40px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 100px;
-    width: 300px;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
-    /*余白を指定して場所を調整*/
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    /* フォントの設定 */
-    font-weight: bold;
-}
-
 /* ダイアログボックス */
 #content {
     padding: 10px;
@@ -335,4 +215,79 @@
 .closebutton {
     padding: 5px 15px;
     margin: 20px;
+}
+
+/* タブメニュー */
+.tab__menu {
+    display: flex;
+    /* align-items: flex-end; */
+    /* メニューを下揃え */
+    /* justify-content: center; */
+    min-height: 50px;
+    /* メニュー切替時にタブがズレないように */
+    padding: 0;
+    margin: 0;
+}
+
+.tab__menu-item {
+    list-style: none;
+    width: 200px;
+    padding: 8px 5px;
+    /* メニューに高さを付ける */
+    text-align: center;
+    margin-right: 6px;
+    background-color: #cdcdcd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    /* アニメーション */
+}
+
+.tab__menu-item:last-of-type {
+    margin-right: 0px;
+}
+
+/* is-activeがついている時のスタイル */
+.tab__menu-item.is-active {
+    background-color: rgba(48, 172, 249);
+    color: #ffffff;
+    padding: 12px 5px;
+}
+
+/* タブパネル */
+.tab__panel {
+    width: 1095px;
+    /* ボーダー */
+    border: 5px solid#111;
+}
+
+.tab__panel-box {
+    min-height: 430px;
+    padding: 10px 30px;
+}
+
+.tab__panel-box001 {
+    background-color: rgb(205, 246, 246);
+    display: none;
+}
+
+.tab__panel-box002 {
+    background-color: rgb(249 227 243);
+    display: none;
+}
+
+.tab__panel-box003 {
+    background-color: rgb(200, 248, 195);
+    display: none;
+}
+
+.tab__panel-box004 {
+    background-color: rgb(200, 248, 195);
+    display: none;
+}
+
+/* is-showがついている時のスタイル */
+.tab__panel-box.is-show {
+    display: block;
 }

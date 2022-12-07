@@ -12,42 +12,53 @@
 
 <body>
     <div id="content"></div>
-    <!-- コンテナ -->
-    <div id="container">
-        <!-- 左エリア -->
-        <div id="reftArea">
-            <!-- 商品エリア -->
-            <div id="productArea">
+    <!-- 左エリア -->
+    <div id="reftArea">
+        <!-- 商品エリア -->
+        <!-- <div id="productArea">
+            <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+        </div> -->
+        <ul class="tab__menu">
+            <li class="tab__menu-item is-active" data-tab="01">menu1</li>
+            <li class=" tab__menu-item" data-tab="02">menu2</li>
+            <li class="tab__menu-item" data-tab="03">menu3</li>
+            <li class="tab__menu-item" data-tab="04">menu4</li>
+        </ul>
+        <div class="tab__panel">
+            <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01" on>
                 <!-- 商品ボタン -->
                 <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
             </div>
-            <!-- 左下のエリア -->
-            <div id="lowerLeftArea">
-                <!-- 合計エリア -->
-                <div id="totalarea">
-                    <!-- 商品表示 -->
-                    <div id="name">
-                        <!-- 後に変更 -->
-                        <div id="tama" class="purchaseList">
-
-                        </div>
-                    </div>
-                    <!-- その他項目 -->
-                    <div id="quantity">個数：0個</div>
-                    <div id="price">合計：0円</div>
-                    <div id="change">詳細画面</div>
-                </div>
+            <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                <p class="tab__panel-text">
+                    2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。</p>
+            </div>
+            <div class="tab__panel-box tab__panel-box003" data-panel="03">
+                <p class="tab__panel-text">
+                    3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。</p>
+            </div>
+            <div class="tab__panel-box tab__panel-box004" data-panel="04">
+                <p class="tab__panel-text">
+                    4枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。</p>
             </div>
         </div>
-        <!-- 右エリア -->
-        <div id="rightArea">
-            <!-- ボタンエリア -->
-            <div class="changeButtonArea">
-                <button type="button" value="野菜" class="changeButton">野菜</button>
-                <button type="button" value="水産" class="changeButton">水産</button>
-                <button type="button" value="惣菜" class="changeButton">惣菜</button>
+        <!-- 境界線 -->
+        <!-- 左下のエリア -->
+        <div id="lowerLeftArea">
+            <!-- 合計エリア -->
+            <div id="totalarea">
+                <!-- 商品表示 -->
+                <div id="name">
+                    <!-- 後に変更 -->
+                    <div id="tama" class="purchaseList">
+
+                    </div>
+                </div>
+                <!-- その他項目 -->
+                <div id="quantity">個数：0個</div>
+                <div id="price">合計：0円</div>
+                <div id="change" onclick="showDialog();">確定</div>
             </div>
-            <button type="button" value="確定" id="totalButton" onclick="showDialog();">確定</button>
         </div>
     </div>
     <!-- js -->
