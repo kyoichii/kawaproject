@@ -90,8 +90,6 @@
 #displayArea {
     /*背景色*/
     /* background: #111; */
-    /* 文字色 */
-    color: #111;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -189,10 +187,12 @@
     font-size: 15px;
     /* フォントの設定 */
     font-weight: bold;
+    /* 文字周りの余白 */
+    padding: 5%;
 }
 
 /* 商品名 */
-.name {
+#name {
     /* 文字の色 */
     color: #111;
     /*背景色*/
