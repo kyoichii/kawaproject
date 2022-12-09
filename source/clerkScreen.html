@@ -29,6 +29,7 @@
                 <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01" on>
                     <!-- 商品ボタン -->
                     <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                    <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(1);">たまねぎ</button>
                 </div>
                 <div class="tab__panel-box tab__panel-box002" data-panel="02">
                     <p class="tab__panel-text">
@@ -66,8 +67,12 @@
             <!-- 商品表示エリア -->
             <div id="displayArea">
                 <!-- 商品表示 -->
-                <div id="displayQuantity"></div>
-                <div id="displayPrice"></div>
+                <div id="displayTama" class="purchaseList">
+                </div>
+                <div id="displayNin" class="purchaseList">
+                </div>
+                <div id="displayBeaf" class="purchaseList">
+                </div>
             </div>
             <!-- 右下エリア -->
             <div id="lowerRightArea">

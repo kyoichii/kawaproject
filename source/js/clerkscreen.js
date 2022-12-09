@@ -29,12 +29,15 @@ function vegetable(vegenumber) {
     if (vegename[vegenumber] == '玉ねぎ') {
         //玉ねぎの時の処理
         document.getElementById('tama').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(0)"> ー </button>`;
+        document.getElementById('displayTama').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(0)"> ー </button>`;
     } else if (vegename[vegenumber] == 'にんじん') {
         //にんじんの時の処理
         document.getElementById('nin').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(1)"> ー </button>`;
+        document.getElementById('displayNin').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(1)"> ー </button>`;
     } else if (vegename[vegenumber] == '豚肉') {
         //豚肉の時の処理
         document.getElementById('beaf').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(2)"> ー </button>`;
+        document.getElementById('displayBeaf').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(2)"> ー </button>`;
     }
     //全体の個数・値段を表示
     totalarea()
@@ -61,27 +64,33 @@ function minusclick(vegenumber) {
         if (vegecount[vegenumber] != 0) {
             //購入個数が1個以上なら個数に応じた表示を行う。
             document.getElementById('tama').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(0)"> ー </button>`;
+            document.getElementById('displayTama').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(0)"> ー </button>`;
         } else {
             //購入個数が0になれば、表示を消す
             document.getElementById('tama').innerHTML = "";
+            document.getElementById('displayTama').innerHTML = "";
         }
     } else if (vegename[vegenumber] == 'にんじん') {
         //にんじんの時の処理
         if (vegecount[vegenumber] != 0) {
             //購入個数が1個以上なら個数に応じた表示を行う。
             document.getElementById('nin').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(1)"> ー </button>`;
+            document.getElementById('displayNin').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(1)"> ー </button>`;
         } else {
             //購入個数が0になれば、表示を消す
             document.getElementById('nin').innerHTML = "";
+            document.getElementById('displayNin').innerHTML = "";
         }
     } else if (vegename[vegenumber] == '豚肉') {
         //豚肉の時の処理
         if (vegecount[vegenumber] != 0) {
             //購入個数が1個以上なら個数に応じた表示を行う。
             document.getElementById('beaf').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(2)"> ー </button>`;
+            document.getElementById('displayBeaf').innerHTML = `${vegename[vegenumber]}: ${vegecount[vegenumber]}個: ${vegeprice[vegenumber]}円　　<button onclick="minusclick(2)"> ー </button>`;
         } else {
             //購入個数が0になれば、表示を消す
             document.getElementById('beaf').innerHTML = "";
+            document.getElementById('displayBeaf').innerHTML = "";
         }
     }
     //全体の個数・値段を表示
