@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+/* コンテナ */
+#container {
+    /*フレックスボックス*/
+    display: flex;
+    /*ページの中間に固定*/
+    justify-content: center;
+    align-items: center;
+    /*ボックス間の横幅*/
+    /* gap: 30px; */
+    /*ボックスの大きさ*/
+    height: 600px;
+    /* ボーダー */
+    /* border: solid 4px #333;
+    border-radius: 12px; */
+}
+
 /* 左エリア  */
 #reftArea {
     /*背景色*/
@@ -10,7 +26,7 @@
     flex-direction: column;
     /*ボックスの大きさ*/
     height: 600px;
-    width: 1100px;
+    width: 900px;
     /*余白を指定して場所を調整*/
     margin-left: auto;
     margin-right: auto;
@@ -30,7 +46,7 @@
     background: red;
     /*ボックスの大きさ*/
     height: 100px;
-    width: 1095px;
+    width: 895px;
     /* ボーダー */
     border: 5px solid#111;
 }
@@ -48,6 +64,97 @@
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+/* 右エリア */
+#rightArea {
+    /*背景色*/
+    /* background: #111; */
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /* 文字色 */
+    color: #fff;
+    /*ボックスのサイズ*/
+    height: 625px;
+    width: 300px;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
+    margin-bottom: auto;
+}
+
+/* 表示エリア */
+#displayArea {
+    /*背景色*/
+    /* background: #111; */
+    /* 文字色 */
+    color: #111;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /* 文字色 */
+    color: #fff;
+    text-align: center;
+    /*ボックスのサイズ*/
+    height: 500px;
+    width: 290px;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    /* スクロール */
+    overflow: auto;
+    /* ボーダー */
+    border: 5px solid#111;
+}
+
+/* 右下エリア */
+#lowerRightArea {
+    /*背景色*/
+    /* background: #111; */
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /* 文字色 */
+    color: #fff;
+    /*ボックスのサイズ*/
+    height: 125px;
+    width: 300px;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* 商品確定ボタン */
+#totalButton {
+    /*背景色*/
+    background: #70372c;
+    /* 文字の色 */
+    color: #fff;
+    /* 文字のサイズ */
+    font-size: 40px;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    height: 100px;
+    width: 250px;
+    /* 両端に丸みを付ける */
+    border-radius: 100px;
+    /*余白を指定して場所を調整*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* フォントの設定 */
+    font-weight: bold;
 }
 
 /* 商品ボタン */
@@ -123,6 +230,11 @@
     font-weight: bold;
 }
 
+#displayPrice {
+    /* 文字の色 */
+    color: #111;
+}
+
 /* 数量 */
 #quantity {
     /* 文字の色 */
@@ -140,6 +252,12 @@
     border-radius: 8px;
     /* フォントの設定 */
     font-weight: bold;
+}
+
+/* 表示画面用の数量 */
+#displayQuantity {
+    /* 文字の色 */
+    color: #111;
 }
 
 /* 詳細画面 */
@@ -257,7 +375,7 @@
 
 /* タブパネル */
 .tab__panel {
-    width: 1095px;
+    width: 895px;
     /* ボーダー */
     border: 5px solid#111;
 }
