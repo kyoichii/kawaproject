@@ -103,9 +103,7 @@ function minusclick(vegenumber) {
 //合計表示関数
 function totalarea() {
     document.getElementById('quantity').innerHTML = `合計:${totalcount}個`;
-    document.getElementById('displayQuantity').innerHTML = `個数:${totalcount}個`;
     document.getElementById('price').innerHTML = `会計:${totalprice}円`;
-    document.getElementById('displayPrice').innerHTML = `会計:${totalprice}円`;
 }
 
 /*
