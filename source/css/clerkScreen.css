@@ -48,7 +48,9 @@
     height: 100px;
     width: 895px;
     /* ボーダー */
-    border: 5px solid#111;
+    border-bottom: 5px solid#111;
+    border-left: 5px solid#111;
+    border-right: 5px solid#111;
 }
 
 /*  合計エリア */
@@ -396,11 +398,6 @@
 }
 
 .tab__panel-box003 {
-    background-color: rgb(200, 248, 195);
-    display: none;
-}
-
-.tab__panel-box004 {
     background-color: rgb(200, 248, 195);
     display: none;
 }
