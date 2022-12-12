@@ -21,23 +21,38 @@
         </div> -->
             <ul class="tab__menu">
                 <li class="tab__menu-item is-active" data-tab="01">野菜</li>
-                <li class=" tab__menu-item" data-tab="02">惣菜</li>
-                <li class="tab__menu-item" data-tab="03">水産</li>
+                <li class=" tab__menu-item" data-tab="02">水産</li>
+                <li class="tab__menu-item" data-tab="03">惣菜</li>
             </ul>
             <div class="tab__panel">
                 <div class="tab__panel-box tab__panel-box001 is-show" data-panel="01" on>
                     <!-- 商品ボタン -->
+                    <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">たまねぎ</button>
+                    <button type="button" class="productButton" value="にんじん" onclick="vegetable(1);">にんじん</button>
+                    <button type="button" class="productButton" value="ピーマン" onclick="vegetable(2);">ピーマン</button>
+                    <button type="button" class="productButton" value="ほうれんそう" onclick="vegetable(3);">ほうれんそう</button>
+                    <button type="button" class="productButton" value="きゅうり" onclick="vegetable(4);">きゅうり</button>
+                    <button type="button" class="productButton" value="オクラ" onclick="vegetable(5);">オクラ</button>
+                    <button type="button" class="productButton" value="なす" onclick="vegetable(6);">なす</button>
+                    <button type="button" class="productButton" value="大根" onclick="vegetable(7);">大根</button>
+                    <button type="button" class="productButton" value="とうもろこし" onclick="vegetable(8);">とうもろこし</button>
+                    <button type="button" class="productButton" value="じゃがいも" onclick="vegetable(9);">じゃがいも</button>
+                    <button type="button" class="productButton" value="白菜" onclick="vegetable(10);">白菜</button>
+                    <button type="button" class="productButton" value="ブロッコリー" onclick="vegetable(11);">ブロッコリー</button>
+                </div>
+                <div class="tab__panel-box tab__panel-box002" data-panel="02">
+                    <button type="button" class="productButton" value="鮭" onclick="vegetable(12);">鮭</button>
+                    <button type="button" class="productButton" value="イカ" onclick="vegetable(12);">イカ</button>
+                    <button type="button" class="productButton" value="スルメイカ" onclick="vegetable(12);">鮭</button>
+                    <button type="button" class="productButton" value="タコ" onclick="vegetable(12);">タコ</button>
+                    <button type="button" class="productButton" value="ブリ" onclick="vegetable(12);">ブリ</button>
+                    <button type="button" class="productButton" value="ホタテ" onclick="vegetable(12);">ホタテ</button>
+                    <button type="button" class="productButton" value="スルメイカ" onclick="vegetable(12);">鮭</button>
+                </div>
+                <div class="tab__panel-box tab__panel-box003" data-panel="03">
                     <button type="button" class="productButton" value="たまねぎ" onclick="vegetable(0);">アスパラ</button>
                     <button type="button" class="productButton" value="にんじん" onclick="vegetable(1);">にんじん</button>
                     <button type="button" class="productButton" value="ピーマン" onclick="vegetable(2);">ピーマン</button>
-                </div>
-                <div class="tab__panel-box tab__panel-box002" data-panel="02">
-                    <p class="tab__panel-text">
-                        2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。2枚目のタブです。</p>
-                </div>
-                <div class="tab__panel-box tab__panel-box003" data-panel="03">
-                    <p class="tab__panel-text">
-                        3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。3枚目のタブです。</p>
                 </div>
             </div>
             <!-- 境界線 -->
@@ -53,7 +68,6 @@
                     <!-- その他項目 -->
                     <div id="quantity">個数：0個</div>
                     <div id="price">合計：0円</div>
-                    <div id="change" onclick="showDialog();">確定</div>
                 </div>
             </div>
         </div>
@@ -67,6 +81,26 @@
                 <div id="nin" class="purchaseList">
                 </div>
                 <div id="piman" class="purchaseList">
+                </div>
+                <div id="hou" class="purchaseList">
+                </div>
+                <div id="kyuu" class="purchaseList">
+                </div>
+                <div id="okura" class="purchaseList">
+                </div>
+                <div id="nasu" class="purchaseList">
+                </div>
+                <div id="daikon" class="purchaseList">
+                </div>
+                <div id="toumoro" class="purchaseList">
+                </div>
+                <div id="zyaga" class="purchaseList">
+                </div>
+                <div id="haku" class="purchaseList">
+                </div>
+                <div id="buro" class="purchaseList">
+                </div>
+                <div id="syake" class="purchaseList">
                 </div>
             </div>
             <!-- 右下エリア -->

@@ -43,9 +43,9 @@
     /*ボックス内の下に配置*/
     margin-top: auto;
     /*背景色*/
-    background: red;
+    background: #ff8c00;
     /*ボックスの大きさ*/
-    height: 100px;
+    height: 110px;
     width: 895px;
     /* ボーダー */
     border-bottom: 5px solid#111;
@@ -91,7 +91,7 @@
 /* 表示エリア */
 #displayArea {
     /*背景色*/
-    /* background: #111; */
+    background: #d6f3be;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
@@ -162,11 +162,13 @@
     /* 文字の色 */
     color: #111;
     /*背景色*/
-    background: gold;
+    background: #fff;
     /* 文字を中央に */
     text-align: center;
     /*ボックスの余白*/
-    padding: 30px 110px;
+    /* padding: 30px 110px; */
+    height: 80px;
+    width: 250px;
     /* 余白 */
     margin-left: 10px;
     /* ボーダー */
@@ -175,10 +177,10 @@
     /* フォントの設定 */
     font-weight: bold;
     /*余白を指定して場所を調整*/
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-left: 33px;
+    /* margin-right: 20px; */
+    /* margin-bottom: 10px; */
+    margin-top: 20px;
 }
 
 /* 購入リスト */
@@ -189,8 +191,9 @@
     font-size: 15px;
     /* フォントの設定 */
     font-weight: bold;
-    /* 文字周りの余白 */
-    padding: 5%;
+    display: inline-block
+        /* 文字周りの余白 */
+        /* padding: 5%; */
 }
 
 /* 商品名 */
@@ -198,14 +201,33 @@
     /* 文字の色 */
     color: #111;
     /*背景色*/
-    background: gold;
+    background: #fff;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
     padding: 15px 60px;
     /*ボックスの大きさ*/
     height: 30px;
-    width: 250px;
+    width: 300px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 数量 */
+#quantity {
+    /* 文字の色 */
+    color: #111;
+    /*背景色*/
+    background: #fff;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 40px;
+    /* 余白 */
+    margin-left: 10px;
     /* ボーダー */
     border: solid 2px #333;
     border-radius: 8px;
@@ -218,7 +240,7 @@
     /* 文字の色 */
     color: #111;
     /*背景色*/
-    background: gold;
+    background: #fff;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
@@ -237,48 +259,10 @@
     color: #111;
 }
 
-/* 数量 */
-#quantity {
-    /* 文字の色 */
-    color: #111;
-    /*背景色*/
-    background: gold;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    padding: 15px 40px;
-    /* 余白 */
-    margin-left: 10px;
-    /* ボーダー */
-    border: solid 2px #333;
-    border-radius: 8px;
-    /* フォントの設定 */
-    font-weight: bold;
-}
-
 /* 表示画面用の数量 */
 #displayQuantity {
     /* 文字の色 */
     color: #111;
-}
-
-/* 詳細画面 */
-#change {
-    /* 文字の色 */
-    color: #111;
-    /*背景色*/
-    background: gold;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    padding: 15px 40px;
-    /* 余白 */
-    margin-left: 10px;
-    /* ボーダー */
-    border: solid 2px #333;
-    border-radius: 8px;
-    /* フォントの設定 */
-    font-weight: bold;
 }
 
 /* ダイアログボックス */
@@ -384,21 +368,25 @@
 
 .tab__panel-box {
     min-height: 430px;
-    padding: 10px 30px;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /* padding: 10px 30px; */
 }
 
 .tab__panel-box001 {
-    background-color: rgb(205, 246, 246);
+    background-color: #90e264;
     display: none;
 }
 
 .tab__panel-box002 {
-    background-color: rgb(249 227 243);
+    background-color: #79a7d9;
     display: none;
 }
 
 .tab__panel-box003 {
-    background-color: rgb(200, 248, 195);
+    background-color: #da6a38;
     display: none;
 }
 
