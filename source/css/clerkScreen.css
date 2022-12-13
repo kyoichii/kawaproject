@@ -282,6 +282,7 @@
 /* ダイアログボックスの中のcss */
 #dialog_body {
     color: white;
+    background-color: #150c15;
     font-size: 19px;
     position: absolute;
     /* border-radius: 6px 6px 6px 6px; */
@@ -290,6 +291,8 @@
     /* background-color: #FFF; */
     /* box-shadow: 6px 6px 6px rgb(0 0 0 / 40%); */
     padding: 8px;
+    /* ボーダー */
+    border: 3px solid#111;
 }
 
 /* ダイアログdivのcss */
