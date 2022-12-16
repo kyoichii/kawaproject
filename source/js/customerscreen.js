@@ -15,10 +15,8 @@ console.log('合計個数:' + params.get('totalcount'));
 */
 var changemonney = 0;   //お釣り金額
 var inputmonney = 0;    //投入金額
-// var rezinumber = params.get('rezinumber');  //レジ番号
-var rezinumber = 1
-// var totalprice = params.get('totalprice');  //合計金額
-var totalprice = 10000; //仮
+var rezinumber = params.get('rezinumber');  //レジ番号
+var totalprice = params.get('totalprice');  //合計金額
 var depositmoney = document.getElementById("depositMoney");  // 手入力の値段を取得
 document.getElementById("number").innerHTML = rezinumber + "番レジ";
 document.getElementById("totalprice").innerHTML = totalprice + "円";
