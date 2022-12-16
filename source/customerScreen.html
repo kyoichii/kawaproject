@@ -18,20 +18,27 @@
         </div>
         <!-- 左エリア -->
         <div id="reftArea">
-            <!-- お金投入ボタン -->
-            <div id="paymentButton">
-                <input type="button" value="お金を投入する" id="paymentButton" onclick="changebutton(1)">
-            </div>
             <!-- 手入力エリア -->
             <div id="moneyButtonArea">
-                <div id="input">
-                    手入力
+                <div class="name">
+                    ボタン入力
                 </div>
                 <!-- お金ボタン -->
                 <input type="button" value="10円" id="tenYenButton" onclick="changebutton(10)">
                 <input type="button" value="100円" id="hundredYenButton" onclick="changebutton(100)">
                 <input type="button" value="1000円" id="thousandYenButton" onclick="changebutton(1000)">
                 <input type="button" value="クリア" id="clearButton" onclick="changebutton(0)">
+            </div>
+            <div id="moneyInputArea">
+                <div class="name">
+                    手入力
+                </div>
+                <!-- 入力欄 -->
+                <input type="text" id="depositMoney" maxlength="5" oninput="value = value.replace(/[^0-9]+/i,'');" />
+                <!-- お金投入ボタン -->
+                <div id="paymentButton">
+                    <input type="button" value="入金" id="paymentButton" onclick="changebutton(1)">
+                </div>
             </div>
         </div>
         <!-- 右エリア -->

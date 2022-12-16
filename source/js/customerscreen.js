@@ -15,8 +15,11 @@ console.log('合計個数:' + params.get('totalcount'));
 */
 var changemonney = 0;   //お釣り金額
 var inputmonney = 0;    //投入金額
-var rezinumber = params.get('rezinumber');  //レジ番号
-var totalprice = params.get('totalprice');  //合計金額
+// var rezinumber = params.get('rezinumber');  //レジ番号
+var rezinumber = 1
+// var totalprice = params.get('totalprice');  //合計金額
+var totalprice = 10000; //仮
+var depositmoney = document.getElementById("depositMoney");  // 手入力の値段を取得
 document.getElementById("number").innerHTML = rezinumber + "番レジ";
 document.getElementById("totalprice").innerHTML = totalprice + "円";
 
@@ -27,7 +30,7 @@ function changebutton(number) {
         //角送られてきた数字に対する処理
         case 0:
             //0の時の処理
-            console.log("クリアボタンクリック！")
+            console.log("クリアボタンクリック")
             //今までの投入金額及びお釣り金額をリセット
             inputmonney = 0
             changemonney = 0
@@ -35,7 +38,8 @@ function changebutton(number) {
         case 1:
             ///1の時の処理
             console.log("お金投入ボタンクリック")
-            inputmonney += Number(totalprice)  //合計金額をインクリメント
+            const value = depositmoney.value //手入力ボックスから値を取得
+            inputmonney += Number(value)  //合計金額をインクリメント
             break
         case 10:
             //10の時の処理
