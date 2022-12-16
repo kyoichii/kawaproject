@@ -2,78 +2,36 @@
 
 /* コンテナ */
 #container {
-    /* 左上の「アイテム」の位置を固定 */
-    /* position: relative; */
     /*フレックスボックス*/
     display: flex;
     /*ページの中間に固定*/
     justify-content: center;
     align-items: center;
     /*ボックス間の横幅*/
-    gap: 50px;
+    /* gap: 30px; */
     /*ボックスの大きさ*/
     height: 600px;
     /* ボーダー */
-    border: solid 2px #333;
-    border-radius: 8px;
+    /* border: solid 4px #333;
+    border-radius: 12px; */
 }
 
 /* 左エリア  */
 #reftArea {
     /*背景色*/
-    background: #BDB4C6;
+    background: #fff;
     /*フレックスボックス*/
     display: flex;
     /*ボックス内の並びを指定*/
     flex-direction: column;
     /*ボックスの大きさ*/
-    height: 500px;
-    width: 700px;
-    /* ボーダー */
-    border: 5px solid#111;
-    /*余白を指定して場所を調整*/
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-/* 右エリア */
-#rightArea {
-    /*背景色*/
-    /* background: #666; */
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: column;
-    /* 文字色 */
-    color: #fff;
-    /*ボックスのサイズ*/
     height: 600px;
-    width: 400px;
+    width: 900px;
     /*余白を指定して場所を調整*/
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-/* 商品表示エリア */
-#productArea {
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: column;
-    /*余白を指定して場所を調整*/
-    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* 購入リスト */
-.purchaseList {
-    /* 文字の色 */
-    color: #111;
-    /* 文字の大きさ */
-    font-size: 30px;
-    /* フォントの設定 */
-    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 /* 左下エリア */
@@ -85,12 +43,14 @@
     /*ボックス内の下に配置*/
     margin-top: auto;
     /*背景色*/
-    background: red;
+    background: #ff8c00;
     /*ボックスの大きさ*/
-    height: 100px;
-    width: 700px;
+    height: 110px;
+    width: 895px;
     /* ボーダー */
-    border-top: 5px solid#111;
+    border-bottom: 5px solid#111;
+    border-left: 5px solid#111;
+    border-right: 5px solid#111;
 }
 
 /*  合計エリア */
@@ -103,23 +63,152 @@
     flex-direction: row;
     /*余白を指定して場所を調整*/
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-/* 金額 */
-#price {
-    /* 文字の色 */
-    color: #111;
+/* 右エリア */
+#rightArea {
     /*背景色*/
-    background: gold;
+    /* background: #111; */
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /* 文字色 */
+    color: #fff;
+    /*ボックスのサイズ*/
+    height: 625px;
+    width: 300px;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
+    margin-bottom: auto;
+}
+
+/* 表示エリア */
+#displayArea {
+    /*背景色*/
+    background: #d6f3be;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /* 文字色 */
+    color: #fff;
+    text-align: center;
+    /*ボックスのサイズ*/
+    height: 500px;
+    width: 290px;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: auto; */
+    /* margin-bottom: auto; */
+    /* スクロール */
+    overflow: auto;
+    /* ボーダー */
+    border: 5px solid#111;
+}
+
+/* 右下エリア */
+#lowerRightArea {
+    /*背景色*/
+    /* background: #111; */
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /* 文字色 */
+    color: #fff;
+    /*ボックスのサイズ*/
+    height: 125px;
+    width: 300px;
+    /*余白を指定して場所を調整*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* 商品確定ボタン */
+#totalButton {
+    /*背景色*/
+    background: #70372c;
+    /* 文字の色 */
+    color: #fff;
+    /* 文字のサイズ */
+    font-size: 40px;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
-    padding: 15px 40px;
+    height: 100px;
+    width: 250px;
+    /* 両端に丸みを付ける */
+    border-radius: 100px;
+    /*余白を指定して場所を調整*/
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* フォントの設定 */
+    font-weight: bold;
+}
+
+/* 商品ボタン */
+.productButton {
+    /* 文字の色 */
+    color: #111;
+    /*背景色*/
+    background: #fff;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスの余白*/
+    /* padding: 30px 110px; */
+    height: 80px;
+    width: 250px;
     /* 余白 */
     margin-left: 10px;
+    /* ボーダー */
+    border: solid 2px #333;
+    border-radius: 8px;
+    /* フォントの設定 */
+    font-weight: bold;
+    /*余白を指定して場所を調整*/
+    margin-left: 33px;
+    /* margin-right: 20px; */
+    /* margin-bottom: 10px; */
+    margin-top: 20px;
+}
+
+/* 購入リスト */
+.purchaseList {
+    /* 文字の色 */
+    color: #111;
+    /* 文字の大きさ */
+    font-size: 15px;
+    /* フォントの設定 */
+    font-weight: bold;
+    display: inline-block
+        /* 文字周りの余白 */
+        /* padding: 5%; */
+}
+
+/* 商品名 */
+#name {
+    /* 文字の色 */
+    color: #111;
+    /*背景色*/
+    background: #fff;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 60px;
+    /*ボックスの大きさ*/
+    height: 30px;
+    width: 300px;
     /* ボーダー */
     border: solid 2px #333;
     border-radius: 8px;
@@ -132,7 +221,7 @@
     /* 文字の色 */
     color: #111;
     /*背景色*/
-    background: gold;
+    background: #fff;
     /* 文字を中央に */
     text-align: center;
     /*ボックスのサイズ*/
@@ -146,118 +235,34 @@
     font-weight: bold;
 }
 
-/* 商品ボタンエリア */
-#productButtonArea {
-    /* 左上の「アイテム」の位置を固定 */
-    /* position: relative; */
+/* 金額 */
+#price {
+    /* 文字の色 */
+    color: #111;
     /*背景色*/
-    /* background: #0bd; */
-    /*フレックスボックス*/
-    display: flex;
-    /*ボックス内の並びを指定*/
-    flex-direction: column;
-    /*余白を指定して場所を調整*/
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    background: #fff;
+    /* 文字を中央に */
+    text-align: center;
+    /*ボックスのサイズ*/
+    padding: 15px 40px;
+    /* 余白 */
+    margin-left: 10px;
     /* ボーダー */
     border: solid 2px #333;
     border-radius: 8px;
-}
-
-/* たまねぎボタン */
-#onionButton {
-    /* 背景色 */
-    background: #FFA900;
-    /* 文字の色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 75px;
-    width: 250px;
-    /*余白を指定して場所を調整*/
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
     /* フォントの設定 */
     font-weight: bold;
 }
 
-/* にんじんボタン */
-#carrotButton {
-    /* 背景色 */
-    background: #FF7000;
+#displayPrice {
     /* 文字の色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 75px;
-    width: 250px;
-    /*余白を指定して場所を調整*/
-    margin-right: 50px;
-    margin-left: 50px;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
-    /* フォントの設定 */
-    font-weight: bold;
+    color: #111;
 }
 
-/* 豚肉ボタン */
-#porkButton {
-    /* 背景色 */
-    background: #FF0000;
+/* 表示画面用の数量 */
+#displayQuantity {
     /* 文字の色 */
-    color: #fff;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 75px;
-    width: 250px;
-    /*余白を指定して場所を調整*/
-    margin-bottom: 50px;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-left: 50px;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
-    /* フォントの設定 */
-    font-weight: bold;
-}
-
-/* 購入確定ボタンボックス */
-#totalButton {
-    /* 文字の色 */
-    color: #fff;
-    /*背景色*/
-    background: #00186B;
-    /* 文字のサイズ */
-    font-size: 20px;
-    /* 文字を中央に */
-    text-align: center;
-    /*ボックスのサイズ*/
-    height: 100px;
-    width: 300px;
-    /* 両端に丸みを付ける */
-    border-radius: 100px;
-    /*余白を指定して場所を調整*/
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-    /* フォントの設定 */
-    font-weight: bold;
+    color: #111;
 }
 
 /* ダイアログボックス */
@@ -277,6 +282,7 @@
 /* ダイアログボックスの中のcss */
 #dialog_body {
     color: white;
+    background-color: #150c15;
     font-size: 19px;
     position: absolute;
     /* border-radius: 6px 6px 6px 6px; */
@@ -285,6 +291,8 @@
     /* background-color: #FFF; */
     /* box-shadow: 6px 6px 6px rgb(0 0 0 / 40%); */
     padding: 8px;
+    /* ボーダー */
+    border: 3px solid#111;
 }
 
 /* ダイアログdivのcss */
@@ -314,4 +322,78 @@
 .closebutton {
     padding: 5px 15px;
     margin: 20px;
+}
+
+/* タブメニュー */
+.tab__menu {
+    display: flex;
+    /* align-items: flex-end; */
+    /* メニューを下揃え */
+    /* justify-content: center; */
+    min-height: 50px;
+    /* メニュー切替時にタブがズレないように */
+    padding: 0;
+    margin: 0;
+}
+
+.tab__menu-item {
+    list-style: none;
+    width: 200px;
+    padding: 8px 5px;
+    /* メニューに高さを付ける */
+    text-align: center;
+    margin-right: 6px;
+    background-color: #cdcdcd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+    transition: all .3s;
+    /* アニメーション */
+}
+
+.tab__menu-item:last-of-type {
+    margin-right: 0px;
+}
+
+/* is-activeがついている時のスタイル */
+.tab__menu-item.is-active {
+    background-color: rgba(48, 172, 249);
+    color: #ffffff;
+    padding: 12px 5px;
+}
+
+/* タブパネル */
+.tab__panel {
+    width: 895px;
+    /* ボーダー */
+    border: 5px solid#111;
+}
+
+.tab__panel-box {
+    min-height: 430px;
+    /*フレックスボックス*/
+    display: flex;
+    /*ボックス内の並びを指定*/
+    flex-direction: row;
+    /* padding: 10px 30px; */
+}
+
+.tab__panel-box001 {
+    background-color: #90e264;
+    display: none;
+}
+
+.tab__panel-box002 {
+    background-color: #79a7d9;
+    display: none;
+}
+
+.tab__panel-box003 {
+    background-color: #da6a38;
+    display: none;
+}
+
+/* is-showがついている時のスタイル */
+.tab__panel-box.is-show {
+    display: block;
 }
