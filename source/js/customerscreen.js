@@ -100,8 +100,7 @@ function changebutton(number) {
 function calculatebutton() {
     // 投入金額が合計金額以上の場合
     if (inputmonney >= totalprice) {
-        location.replace('/test3.html?changemonney=' + changemonney)
-        // location.href = '/test3.html?changemonney=' + changemonney
+        location.replace('/finalscreen.html?changemonney=' + changemonney)
     } else {
         alert("お金が足りません！！！")
     }
