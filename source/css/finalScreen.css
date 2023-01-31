@@ -1,0 +1,46 @@
+/* コンテナ */
+#container {
+    /*フレックスボックス*/
+    display: flex;
+    /*ページの中間に固定*/
+    justify-content: center;
+    align-items: center;
+    /*ボックス間の横幅*/
+    gap: 50px;
+    /*ボックスの大きさ*/
+    height: 600px;
+    /*コンテナ内の並びを指定*/
+    flex-direction: row;
+    /* ボーダー */
+    border: solid 4px #333;
+    border-radius: 8px;
+    /*ボックス内の並びを指定*/
+    flex-direction: column;
+    /*背景色*/
+    background: #f7e3af;
+}
+
+#changemonney {
+    /* 文字の大きさ */
+    font-size: 50px;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 文字を中央に配置 */
+    text-align: center
+}
+
+#firstbutton {
+    /*背景色*/
+    background: #70372c;
+    /* 文字の色 */
+    color: #fff;
+    /* 文字の大きさ */
+    font-size: 30px;
+    /* フォントの設定 */
+    font-weight: bold;
+    /* 両端に丸みを付ける */
+    border-radius: 10px;
+    /* ボタンのサイズ */
+    height: 100px;
+    width: 300px;
+}
