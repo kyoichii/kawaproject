@@ -12,3 +12,4 @@ $data = "1";
 fputs($fp, $data);
 // ファイルを閉じる
 fclose($fp);
+echo 283;

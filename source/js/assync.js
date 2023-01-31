@@ -16,12 +16,14 @@ Promise.resolve()
                 .then((res) => res.text())
                 .then((apiData) => {
                     if (check == true && apiData == 1) {
+                        fetch("http://localhost:90/php/buzzer.php")
                         // 入力ダイアログを表示 ＋ 入力内容を user に代入
                         user = window.prompt("買い物カゴがレジ付近から離れました。", "");
                         if (user == 7890) {
                             //店員サイドがパスワードを入力後、なっているサウンドを消す。
                             //本来はレジサイドで何らかの操作を行うが、建前としてパスワード入力を行う。
                             fetch("http://localhost:90/php/warning1.php")
+                            fetch("http://localhost:90/php/buzzercheck.php")
                             check = false
                         }
                     } else {
